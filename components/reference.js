@@ -8,7 +8,8 @@ export default () => (
     style={{
       background: "#f0f2f5",
       textAlign: "center",
-      paddingLeft: "50px"
+      paddingLeft: "50px",
+      paddingTop: "5%"
     }}
   >
     <p>Buscador</p>

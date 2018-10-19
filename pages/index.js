@@ -9,7 +9,7 @@ const { Content } = Layout;
 export default () => (
   <Layout style={{ height: "100vh" }}>
     <Header />
-    <Layout style={{ alignItems: "center" }}>
+    <Layout>
       <Reference />
       <Content>
         <BubbleChart />
