@@ -55,7 +55,15 @@ export const fillColor = d3
   .domain(["low", "medium", "high"])
   .range(["#d84b2a", "#beccae", "#7aa25c"]);
 
-export function getClusterProps(width, height, keys) {
+export function getClusterProps(width, height, grouping, data) {
+  const groups = data.reduce((groups, item) => {
+    const val = item[grouping];
+    groups[val] = groups[val] || 0;
+    groups[val] += item.value;
+    return groups;
+  }, {});
+  const keys = Object.keys(groups);
+
   const colCount = 3;
   const rowCount = Math.ceil(keys.length / colCount);
   const clusters = keys
@@ -69,7 +77,8 @@ export function getClusterProps(width, height, keys) {
         dx: width / colCount,
         dy: height,
         row: row,
-        col: i % colCount
+        col: i % colCount,
+        value: groups[k]
       };
       return result;
     })

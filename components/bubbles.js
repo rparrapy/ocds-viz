@@ -196,7 +196,28 @@ export default class Bubbles extends React.Component {
           "translate(" +
           (d.x - this.getComputedTextLength() / 2) +
           ", " +
-          (d.y - d.dy / 4) +
+          (d.y - d.dy / 4 - 25) +
+          ")"
+        );
+      });
+
+    this.state.g
+      .selectAll(".monto-label")
+      .data(Object.values(clusterCenters))
+      .enter()
+      .append("text")
+      .attr("class", "monto-label")
+      .attr("text-anchor", "start")
+      .attr("fill", "#666")
+      .text(function(d) {
+        return varname === "all" ? "aaa" : "Gs. " + d.value.toLocaleString();
+      })
+      .attr("transform", function(d) {
+        return (
+          "translate(" +
+          (d.x - this.getComputedTextLength() / 2) +
+          ", " +
+          (d.y - d.dy / 5 - 25) +
           ")"
         );
       });

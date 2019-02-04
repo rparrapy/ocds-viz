@@ -35,14 +35,10 @@ export default class BubbleView extends React.Component {
   }
 
   onGroupingChanged = newGrouping => {
-    const groupingKeys = Array.from(
-      new Set(this.state.data.map(x => x[newGrouping]))
-    );
-
     const clusterProps =
       newGrouping == "all"
         ? this.centerProps
-        : getClusterProps(width, height, groupingKeys);
+        : getClusterProps(width, height, newGrouping, this.state.data);
 
     this.setState({
       grouping: newGrouping,
