@@ -1,0 +1,4110 @@
+{
+  "publicationPolicy": "https://www.contrataciones.gov.py/datos/legal",
+  "records": [
+    {
+      "releases": [
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/planning/155220-adquisicion-productos-quimicos-medicinales-ad-referendum-presupuesto-2010.json",
+          "tag": [
+            "planning"
+          ],
+          "date": "2013-03-05T08:24:59-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/tender/155220-adquisicion-productos-quimicos-medicinales.json",
+          "tag": [
+            "tender"
+          ],
+          "date": "2009-12-02T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/award/155220-adquisicion-productos-quimicos-medicinales.json",
+          "tag": [
+            "award"
+          ],
+          "date": "2010-03-31T00:00:00-04:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-chaco-internacional-sa-9.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-01-29T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-distribuidora-productos-anestesicos-s-r-l-diproan-7.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-02-03T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-distribuidora-ypacarai-sa-12.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-02-05T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-dutriec-sa-10.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-02-11T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-index-s-a-c-i-11.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-01-28T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-luis-armando-abbate-cordazzo-8.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-01-18T00:00:00-05:00"
+        },
+        {
+          "url": "https://www.contrataciones.gov.py/datos/id/contract/155220-vicente-scavone-cia-comercial-e-industrial-sa-13.json",
+          "tag": [
+            "contract"
+          ],
+          "date": "2010-02-10T00:00:00-05:00"
+        }
+      ],
+      "ocid": "ocds-03ad3f-155220",
+      "compiledRelease": {
+        "planning": {
+          "budget": {
+            "description": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES - AD REFERENDUM PRESUPUESTO 2010",
+            "amount": {
+              "amount": null,
+              "currency": "PYG"
+            }
+          },
+          "url": "https://www.contrataciones.gov.py/datos/id/planificaciones/155220-adquisicion-productos-quimicos-medicinales-ad-referendum-presupuesto-2010"
+        },
+        "awards": [
+          {
+            "value": {
+              "amount": 626953300.0,
+              "currency": "PYG"
+            },
+            "date": "2010-03-31T00:00:00-04:00",
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "id": "155220-adquisicion-productos-quimicos-medicinales",
+            "suppliers": [
+              {
+                "contactPoint": {
+                  "url": "http://www.chacointernacional.com.py",
+                  "email": "chacointer@chacointernacional.com.py",
+                  "name": "CARMEN STELLA ESCOBAR BARRIOCANAL",
+                  "telephone": "2385707",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "LAMBARE",
+                  "postalCode": "",
+                  "streetAddress": "San Juan María Vianney N° 1748 c/ Bruno Guggiari y Amancio González",
+                  "region": "Central"
+                },
+                "name": "CHACO INTERNACIONAL SA",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "CHACO INTERNACIONAL SA",
+                  "id": "80026564-5"
+                }
+              },
+              {
+                "contactPoint": {
+                  "url": null,
+                  "email": "diproan@click.com.py",
+                  "name": "JULIO CESAR ESPINOLA MEDINA - OLGA FRETES DE ESPINOLA - IGNACIO CACERES PAREDES ",
+                  "telephone": "202 301 / 225 015",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "ASUNCION (DISTRITO)",
+                  "postalCode": "",
+                  "streetAddress": "PITIANTUTA 860 E/RCA DE SIRIA Y LIBERTAD",
+                  "region": "Asunción"
+                },
+                "name": "DISTRIBUIDORA DE PRODUCTOS ANESTESICOS S.R.L. DIPROAN",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "DISTRIBUIDORA DE PRODUCTOS ANESTESICOS S.R.L. DIPROAN",
+                  "id": "80003833-9"
+                }
+              },
+              {
+                "contactPoint": {
+                  "url": null,
+                  "email": "informes@dysa.com.py",
+                  "name": "FLORENCIA LLANO DE HELLMERS - RICARDO HELLMERS FONSECA- VICENTE ANTONIO DEFELICE - WILLIAM WILKA TAPIERO",
+                  "telephone": "282102",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "ASUNCION (DISTRITO)",
+                  "postalCode": "",
+                  "streetAddress": "AVDA.ARTIGAS C/AVDA.VENEZUELA 2698",
+                  "region": "Asunción"
+                },
+                "name": "DISTRIBUIDORA YPACARAI SA",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "DISTRIBUIDORA YPACARAI SA",
+                  "id": "80013820-1"
+                }
+              },
+              {
+                "contactPoint": {
+                  "url": "http://www.dutriec.com.py",
+                  "email": "dutriec@gmail.com",
+                  "name": "LIC. JOSE LUIS FERNANDEZ",
+                  "telephone": "615832",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "ASUNCION",
+                  "postalCode": "",
+                  "streetAddress": "LA FRANCONI Nº 4123 C/ CHOFERES DEL CHACO",
+                  "region": "Asunción"
+                },
+                "name": "DUTRIEC SA",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "DUTRIEC SA",
+                  "id": "80015056-2"
+                }
+              },
+              {
+                "contactPoint": {
+                  "url": null,
+                  "email": "indexsaci@index.com.py",
+                  "name": "ERNESTO WASMOSY MONTI,ERNESTO WASMOSY SCHMIDT,VERONICA WASMOSY DE GUNTHER,KARIN WASMOSY DE BOSMANS",
+                  "telephone": "203860",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "ASUNCION",
+                  "postalCode": "",
+                  "streetAddress": "BOQUERON 673 ENTRE TOLEDO Y MISIONES",
+                  "region": "Asunción"
+                },
+                "name": "INDEX S.A.C.I.",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "INDEX S.A.C.I.",
+                  "id": "80002742-6"
+                }
+              },
+              {
+                "contactPoint": {
+                  "url": "http://www.cirumed.com.py",
+                  "email": "info@cirumed.com.py",
+                  "name": "LUIS ARMANDO ABBATE CORDAZZO",
+                  "telephone": "220033 - 220034",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "ASUNCION",
+                  "postalCode": "",
+                  "streetAddress": "BRASIL NÂº 944 C/ MANUEL DOMINGUEZ",
+                  "region": "Asunción"
+                },
+                "name": "LUIS ARMANDO ABBATE CORDAZZO",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "LUIS ARMANDO ABBATE CORDAZZO",
+                  "id": "297749-4"
+                }
+              },
+              {
+                "contactPoint": {
+                  "url": "http://www.lasca.com.py",
+                  "email": "licita@lasca.com.py",
+                  "name": "OSCAR SCAVONE RIVAS-CARLOS URÁN CUEVAS-PASCUAL GIAGNI-VICENTE SCAVONE CÁRDENAS-CÉSAR SCAVONE CARDENAS-MARIA CABALLERO SCAVONE-ORNELLA CABALLERO-RAMON DARIO MUNDO",
+                  "telephone": "021 522 322",
+                  "faxNumber": ""
+                },
+                "address": {
+                  "countryName": "Paraguay",
+                  "locality": "SAN LORENZO.",
+                  "postalCode": "",
+                  "streetAddress": "PASTORA CÉSPEDES Y VICENTE SCAVONE.",
+                  "region": "Central"
+                },
+                "name": "VICENTE SCAVONE & CIA.COMERCIAL E INDUSTRIAL SA",
+                "identifier": {
+                  "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                  "legalName": "VICENTE SCAVONE & CIA.COMERCIAL E INDUSTRIAL SA",
+                  "id": "80001446-4"
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/adjudicaciones/155220-adquisicion-productos-quimicos-medicinales",
+            "status": "active"
+          }
+        ],
+        "ocid": "ocds-03ad3f-155220",
+        "contracts": [
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 139980992.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53723",
+            "suppliers": {
+              "name": "CHACO INTERNACIONAL SA",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "CHACO INTERNACIONAL SA",
+                "id": "80026564-5"
+              },
+              "identifiers": {
+                "key": "155220-chaco-internacional-sa-9"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "x3YpsGPDcow%3D",
+                  "w9mMjjib5Rc%3D",
+                  "gkJB5NO2BvQ%3D",
+                  "21hyQfvOvTA%3D",
+                  "l%2BqZN237jQE%3D",
+                  "0UKJbS%2BNYEI%3D",
+                  "njK5hmvqsSg%3D",
+                  "692YMSvJwKg%3D",
+                  "QUatXUG3TRI%3D",
+                  "AGwsxW5QYF0%3D",
+                  "0N0sKbG6200%3D",
+                  "xhLxC%2BnPIlo%3D",
+                  "AYBSyStNv2k%3D",
+                  "A%2FIxSLcPO0I%3D",
+                  "UPHzh8jaH8g%3D",
+                  "6%2B9DGJRIddk%3D",
+                  "A8BkjKctaqA%3D",
+                  "3gA6gQCIXRY%3D",
+                  "M5mKsqcFEmA%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-01-29",
+              "startDate": "2010-01-29"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "pcTGNOSgH7g%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/pcTGNOSgH7g%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "cg%2B9VEW%2FWJ8%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/cg%252B9VEW%252FWJ8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-01-29T00:00:00-05:00",
+            "id": "155220-chaco-internacional-sa-9",
+            "items": [
+              {
+                "quantity": 30.0,
+                "id": "x3YpsGPDcow%3D",
+                "description": "Tiras Reactivas de Orina",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41113035-013",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41113035-013"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 56900.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 10.0,
+                "id": "w9mMjjib5Rc%3D",
+                "description": "Proteina C. Reactivo (P.C.R.)",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116004-003",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116004-003"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 75000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1200.0,
+                "id": "gkJB5NO2BvQ%3D",
+                "description": "Bolsa para extraccion de sangre triple",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42222308-004",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42222308-004"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 50400.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 100.0,
+                "id": "21hyQfvOvTA%3D",
+                "description": "Bolsa simple para extraccion de sangre",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42222308-006",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42222308-006"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 9300.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 35.0,
+                "id": "l%2BqZN237jQE%3D",
+                "description": "Suero Anti D",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-016",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-016"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 29200.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 40.0,
+                "id": "0UKJbS%2BNYEI%3D",
+                "description": "Suero Anti B",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-045",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-045"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 16000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 35.0,
+                "id": "njK5hmvqsSg%3D",
+                "description": "Suero Anti A",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-043",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-043"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 16000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 3840.0,
+                "id": "692YMSvJwKg%3D",
+                "description": " HVBs",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-051",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-051"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 5290.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 3840.0,
+                "id": "QUatXUG3TRI%3D",
+                "description": "Anti HVBc",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-049",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-049"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 8110.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1000.0,
+                "id": "AGwsxW5QYF0%3D",
+                "description": "Mascara de proteccion p/ gases toxicos",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "46182001-002",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/46182001-002"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 5600.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 5.0,
+                "id": "0N0sKbG6200%3D",
+                "description": "Cinta testigo para Oxido de Etileno",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42281807-007",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42281807-007"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1100000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 5.0,
+                "id": "xhLxC%2BnPIlo%3D",
+                "description": "Cinta testigo para Oxido de Etileno",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42281807-007",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42281807-007"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 540000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 5.0,
+                "id": "AYBSyStNv2k%3D",
+                "description": "Cinta testigo para Oxido de Etileno",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42281807-007",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42281807-007"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 320000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1000.0,
+                "id": "A%2FIxSLcPO0I%3D",
+                "description": "Pulsera de identificacion de paciente",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42142303-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42142303-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 660.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1000.0,
+                "id": "UPHzh8jaH8g%3D",
+                "description": "Pulsera de identificacion de paciente",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42142303-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42142303-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 660.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 5.0,
+                "id": "6%2B9DGJRIddk%3D",
+                "description": "Canula de Traqueostomia sin balón",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42142402-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42142402-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 21700.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1000.0,
+                "id": "A8BkjKctaqA%3D",
+                "description": "Papel para esterilizacion",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42281808-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42281808-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 4900.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 3000.0,
+                "id": "3gA6gQCIXRY%3D",
+                "description": "Hoja para bisturi",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42291613-005",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42291613-005"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 229.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 50.0,
+                "id": "M5mKsqcFEmA%3D",
+                "description": "Cateter de aspiracion",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42272011-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42272011-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 410.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-chaco-internacional-sa-9",
+            "status": "active"
+          },
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 121310000.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53748",
+            "suppliers": {
+              "name": "DISTRIBUIDORA DE PRODUCTOS ANESTESICOS S.R.L. DIPROAN",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "DISTRIBUIDORA DE PRODUCTOS ANESTESICOS S.R.L. DIPROAN",
+                "id": "80003833-9"
+              },
+              "identifiers": {
+                "key": "155220-distribuidora-productos-anestesicos-s-r-l-diproan-7"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "rm6m%2BjRPSZ0%3D",
+                  "oy7EFd6l%2FcU%3D",
+                  "nFMT8JCiiDI%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-02-03",
+              "startDate": "2010-02-03"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "jnhUXGnQw3g%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/jnhUXGnQw3g%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "6YWCJY5MwsI%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/6YWCJY5MwsI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-02-03T00:00:00-05:00",
+            "id": "155220-distribuidora-productos-anestesicos-s-r-l-diproan-7",
+            "items": [
+              {
+                "quantity": 200.0,
+                "id": "rm6m%2BjRPSZ0%3D",
+                "description": "Remifentanilo  polvo p/ Inyectable",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51142232-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142232-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 105000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 10000.0,
+                "id": "oy7EFd6l%2FcU%3D",
+                "description": "Fentanilo ampolla",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51142220-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142220-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 7196.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 2000.0,
+                "id": "nFMT8JCiiDI%3D",
+                "description": "Bromuro de Pancuronio - ampolla",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51152009-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51152009-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 14175.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-distribuidora-productos-anestesicos-s-r-l-diproan-7",
+            "status": "active"
+          },
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 40095000.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53750",
+            "suppliers": {
+              "name": "DISTRIBUIDORA YPACARAI SA",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "DISTRIBUIDORA YPACARAI SA",
+                "id": "80013820-1"
+              },
+              "identifiers": {
+                "key": "155220-distribuidora-ypacarai-sa-12"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "KaqW4cogMcA%3D",
+                  "XWKYMtpznsM%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-02-05",
+              "startDate": "2010-02-05"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "j1PwZE8NAWU%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/j1PwZE8NAWU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "1nzgFSr%2FjDQ%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/1nzgFSr%252FjDQ%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-02-05T00:00:00-05:00",
+            "id": "155220-distribuidora-ypacarai-sa-12",
+            "items": [
+              {
+                "quantity": 35.0,
+                "id": "KaqW4cogMcA%3D",
+                "description": "Sistema de drenaje ventricular externo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42294722-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42294722-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 308000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 50.0,
+                "id": "XWKYMtpznsM%3D",
+                "description": "Filtro Antibacteriano ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "40101903-003",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/40101903-003"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 586300.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-distribuidora-ypacarai-sa-12",
+            "status": "active"
+          },
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 132562496.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53724",
+            "suppliers": {
+              "name": "DUTRIEC SA",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "DUTRIEC SA",
+                "id": "80015056-2"
+              },
+              "identifiers": {
+                "key": "155220-dutriec-sa-10"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "XGejGLE8hTY%3D",
+                  "SXLLpxH3%2Fl8%3D",
+                  "k93675aDh7o%3D",
+                  "UnJ0L6HpEnE%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-02-11",
+              "startDate": "2010-02-11"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "6bHJtUd%2Bs7A%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/6bHJtUd%252Bs7A%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "xnUFt7b1kCU%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/xnUFt7b1kCU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-02-11T00:00:00-05:00",
+            "id": "155220-dutriec-sa-10",
+            "items": [
+              {
+                "quantity": 300.0,
+                "id": "XGejGLE8hTY%3D",
+                "description": "Imipenem Inyectable",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51101508-004",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51101508-004"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 63000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 500.0,
+                "id": "SXLLpxH3%2Fl8%3D",
+                "description": "Meropenem ampolla",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51101611-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51101611-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 63000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 500.0,
+                "id": "k93675aDh7o%3D",
+                "description": "Vancomicina - Polvo Liofilizado",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51101591-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51101591-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 17325.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 20000.0,
+                "id": "UnJ0L6HpEnE%3D",
+                "description": "Alprazolam comprimido",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51141919-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51141919-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 3675.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-dutriec-sa-10",
+            "status": "active"
+          },
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 128153296.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53746",
+            "suppliers": {
+              "name": "INDEX S.A.C.I.",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "INDEX S.A.C.I.",
+                "id": "80002742-6"
+              },
+              "identifiers": {
+                "key": "155220-index-s-a-c-i-11"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "MLR8q%2BxGN4U%3D",
+                  "vkl9gDiqksE%3D",
+                  "BVrzkTAc%2BBc%3D",
+                  "x17MnSgffiM%3D",
+                  "Z0LoazTib6Q%3D",
+                  "%2FPeRjcFmxQc%3D",
+                  "4%2FkNFMZwYNI%3D",
+                  "05dcmhSmOjE%3D",
+                  "WzVwjs9f%2F6A%3D",
+                  "d%2BMzEWjBOhE%3D",
+                  "nsFqqW5xKYg%3D",
+                  "j56k2RwlwQ0%3D",
+                  "RBWsfXeFn0M%3D",
+                  "CwjUiIqoS3Q%3D",
+                  "TG4Jshk%2B6G8%3D",
+                  "%2Fbl%2F66v9PZg%3D",
+                  "ih4UsmiCAaU%3D",
+                  "TfWCOvYajcQ%3D",
+                  "LbJ5hm65oUI%3D",
+                  "BqjIGfFbaqc%3D",
+                  "Q7HzcCZxWbs%3D",
+                  "sfg9%2FttFWVw%3D",
+                  "IkW9EBSbJfE%3D",
+                  "XOP4PZ40g4A%3D",
+                  "Zd7WUuepLGg%3D",
+                  "F2TkSZKx1UE%3D",
+                  "AQ8QVUSJn8I%3D",
+                  "NQVoFuCAWvo%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-01-28",
+              "startDate": "2010-01-28"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "OOirwNfMuBc%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/OOirwNfMuBc%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "uyKAwDFNuWw%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/uyKAwDFNuWw%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-01-28T00:00:00-05:00",
+            "id": "155220-index-s-a-c-i-11",
+            "items": [
+              {
+                "quantity": 8.0,
+                "id": "MLR8q%2BxGN4U%3D",
+                "description": "Solucion de limpieza  - Equipo de  electrolito ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116130-205",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116130-205"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 96250.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "vkl9gDiqksE%3D",
+                "description": "Solucion de limpieza  - Equipo de  electrolito ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116130-205",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116130-205"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 890010.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 2.0,
+                "id": "BVrzkTAc%2BBc%3D",
+                "description": "Tubo de cultivo de vidrio ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41121706-002",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41121706-002"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1455080.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 2.0,
+                "id": "x17MnSgffiM%3D",
+                "description": "Solucion de limpieza  - Equipo de  electrolito ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116130-205",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116130-205"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 126060.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 8.0,
+                "id": "Z0LoazTib6Q%3D",
+                "description": "Solucion de limpieza  - Equipo de  electrolito ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116130-205",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116130-205"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 126060.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 10.0,
+                "id": "%2FPeRjcFmxQc%3D",
+                "description": "Solucion de limpieza  - Equipo de  electrolito ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116130-205",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116130-205"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 637010.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "4%2FkNFMZwYNI%3D",
+                "description": "Alfa feto proteina",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41105333-003",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41105333-003"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 2911040.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 2.0,
+                "id": "05dcmhSmOjE%3D",
+                "description": "Estradiol",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116105-590",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116105-590"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1901020.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "WzVwjs9f%2F6A%3D",
+                "description": "CEA",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116004-026",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116004-026"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 2779040.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 3.0,
+                "id": "d%2BMzEWjBOhE%3D",
+                "description": "Antigeno Prostatico Especifico (PAS) ",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116105-400",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116105-400"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 3790050.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "nsFqqW5xKYg%3D",
+                "description": "Ciclosporina",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116113-024",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116113-024"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 8843010.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "j56k2RwlwQ0%3D",
+                "description": "Carbamazepina suspension",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51141513-002",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51141513-002"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 3922050.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 2.0,
+                "id": "RBWsfXeFn0M%3D",
+                "description": "Reactivo para Cito M.V. IgG",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41115819-011",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41115819-011"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 3922050.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "CwjUiIqoS3Q%3D",
+                "description": "FT4 control",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-005",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-005"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 565070.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 6.0,
+                "id": "TG4Jshk%2B6G8%3D",
+                "description": "FT4 reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-006",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-006"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1395020.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "%2Fbl%2F66v9PZg%3D",
+                "description": "FT3 control",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-002",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-002"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 457050.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 6.0,
+                "id": "ih4UsmiCAaU%3D",
+                "description": "FT3 reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-003",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-003"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1395020.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "TfWCOvYajcQ%3D",
+                "description": "FT4 calibrador",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-004",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-004"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 637010.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "LbJ5hm65oUI%3D",
+                "description": "FT4 control",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-005",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-005"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 637010.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 6.0,
+                "id": "BqjIGfFbaqc%3D",
+                "description": "FT4 reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-006",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-006"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1395020.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "Q7HzcCZxWbs%3D",
+                "description": "T3 Reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-007",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-007"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 457050.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "sfg9%2FttFWVw%3D",
+                "description": "T3 Reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-007",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-007"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 457050.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 6.0,
+                "id": "IkW9EBSbJfE%3D",
+                "description": "T3 Reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41111605-007",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-007"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1395020.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "XOP4PZ40g4A%3D",
+                "description": "Controles de THS",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116128-010",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116128-010"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 637010.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 10.0,
+                "id": "Zd7WUuepLGg%3D",
+                "description": "Control de calidad modulo hormonas tiroideas",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116128-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116128-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1395020.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1.0,
+                "id": "F2TkSZKx1UE%3D",
+                "description": "HIV 1 y 2 reactivo",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-072",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-072"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 565070.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 10.0,
+                "id": "AQ8QVUSJn8I%3D",
+                "description": "Reactivo para HIV",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "41116002-047",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-047"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 1804000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 100.0,
+                "id": "NQVoFuCAWvo%3D",
+                "description": "Conector para Bomba de Contraste",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42201809-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42201809-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 45980.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-index-s-a-c-i-11",
+            "status": "active"
+          },
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 23595000.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53036",
+            "suppliers": {
+              "name": "LUIS ARMANDO ABBATE CORDAZZO",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "LUIS ARMANDO ABBATE CORDAZZO",
+                "id": "297749-4"
+              },
+              "identifiers": {
+                "key": "155220-luis-armando-abbate-cordazzo-8"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "x2cLtTDyLV8%3D",
+                  "d5v6f1LWZng%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-01-18",
+              "startDate": "2010-01-18"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "Bqb%2FsWa0L4Q%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Bqb%252FsWa0L4Q%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "6TErJltoh50%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/6TErJltoh50%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-01-18T00:00:00-05:00",
+            "id": "155220-luis-armando-abbate-cordazzo-8",
+            "items": [
+              {
+                "quantity": 350.0,
+                "id": "x2cLtTDyLV8%3D",
+                "description": "Humidificador",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "40101903-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/40101903-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 38500.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 23.0,
+                "id": "d5v6f1LWZng%3D",
+                "description": "Cemento Biologico Quirurgico",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "42295461-003",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42295461-003"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 440000.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-luis-armando-abbate-cordazzo-8",
+            "status": "active"
+          },
+          {
+            "awardID": "155220-adquisicion-productos-quimicos-medicinales",
+            "value": {
+              "amount": 41256500.0,
+              "currency": "PYG"
+            },
+            "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+            "dncpContractCode": "LP-28001-10-53752",
+            "suppliers": {
+              "name": "VICENTE SCAVONE & CIA.COMERCIAL E INDUSTRIAL SA",
+              "identifier": {
+                "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay",
+                "legalName": "VICENTE SCAVONE & CIA.COMERCIAL E INDUSTRIAL SA",
+                "id": "80001446-4"
+              },
+              "identifiers": {
+                "key": "155220-vicente-scavone-cia-comercial-e-industrial-sa-13"
+              }
+            },
+            "lots": [
+              {
+                "id": "nYZlDIKXpLc%3D",
+                "items": [
+                  "irHZI%2FAtEuc%3D",
+                  "t4bCY1OVMqY%3D",
+                  "6q4JLRDneis%3D",
+                  "v8Q2%2F%2Bav%2BVM%3D",
+                  "w1Iq%2BQzeqcc%3D"
+                ],
+                "title": "Lote 1"
+              }
+            ],
+            "period": {
+              "endDate": "2011-02-10",
+              "startDate": "2010-02-10"
+            },
+            "documents": [
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "2dGl%2Fs0x5ts%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/2dGl%252Fs0x5ts%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nzjucd3PJc4%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nzjucd3PJc4%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "nVkf2RbeVY8%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nVkf2RbeVY8%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "fGphGM24DSY%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/fGphGM24DSY%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "n%2Fa21F08wDc%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/n%252Fa21F08wDc%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "Wp%2FuKqC44%2FM%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/Wp%252FuKqC44%252FM%253D"
+              },
+              {
+                "language": "es",
+                "format": "text/plain",
+                "title": "Cuadro Comparativo de Ofertas",
+                "id": "ZgPHTauTk6o%3D",
+                "documentType": "Cuadro Comparativo de Ofertas",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/ZgPHTauTk6o%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "kXAgZPaC8oE%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/kXAgZPaC8oE%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "%2Fo2C0ESW9ew%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/%252Fo2C0ESW9ew%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "JXV%2FxEefyzU%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/JXV%252FxEefyzU%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "GUSEkBPudCg%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GUSEkBPudCg%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "a68QwP1A5%2F4%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/a68QwP1A5%252F4%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "tNnSz7GAqRY%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/tNnSz7GAqRY%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Informe de Evaluación",
+                "id": "R57YC7Q0Jhk%3D",
+                "documentType": "evaluationReports",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/R57YC7Q0Jhk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "L4mmn%2FEfPwA%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/L4mmn%252FEfPwA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Orden de Compra o Contrato",
+                "id": "I74mYBZsl1s%3D",
+                "documentType": "Orden de Compra o Contrato",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/I74mYBZsl1s%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "GwBQUrqaOKk%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/GwBQUrqaOKk%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "nBh94TzMFYo%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/nBh94TzMFYo%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "MyQf1W3Tyi8%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/MyQf1W3Tyi8%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "UVmgMOXQmaI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/UVmgMOXQmaI%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "aDVlhtxuhxA%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/aDVlhtxuhxA%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "HmvoKq4ZIVs%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/HmvoKq4ZIVs%253D"
+              },
+              {
+                "language": "es",
+                "format": "application/pdf",
+                "title": "Resolución de Adjudicación",
+                "id": "D5VaM%2FQS%2BCI%3D",
+                "documentType": "awardNotice",
+                "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/D5VaM%252FQS%252BCI%253D"
+              }
+            ],
+            "dateSigned": "2010-02-10T00:00:00-05:00",
+            "id": "155220-vicente-scavone-cia-comercial-e-industrial-sa-13",
+            "items": [
+              {
+                "quantity": 250.0,
+                "id": "irHZI%2FAtEuc%3D",
+                "description": "Alfentanilo inyectable",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51142214-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142214-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 20113.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 250.0,
+                "id": "t4bCY1OVMqY%3D",
+                "description": "Alfentanilo inyectable",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51142214-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142214-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 20113.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 3000.0,
+                "id": "6q4JLRDneis%3D",
+                "description": "Dopamina ampolla",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51151737-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51151737-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 5000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 1000.0,
+                "id": "v8Q2%2F%2Bav%2BVM%3D",
+                "description": "Dobutamina ampolla",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51151732-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51151732-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 15000.0,
+                    "currency": "PYG"
+                  }
+                }
+              },
+              {
+                "quantity": 2000.0,
+                "id": "w1Iq%2BQzeqcc%3D",
+                "description": "Sulfato de Atropina ampolla",
+                "classification": {
+                  "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                  "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                  "id": "51151601-001",
+                  "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51151601-001"
+                },
+                "unit": {
+                  "name": "Unidad",
+                  "value": {
+                    "amount": 600.0,
+                    "currency": "PYG"
+                  }
+                }
+              }
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/id/contratos/155220-vicente-scavone-cia-comercial-e-industrial-sa-13",
+            "status": "active"
+          }
+        ],
+        "date": "2018-03-21T14:27:27-04:00",
+        "language": "es",
+        "initiationType": "tender",
+        "buyer": {
+          "contactPoint": {
+            "email": "uic@med.una.py",
+            "name": "C.P. LILIAN SUÁREZ",
+            "telephone": "421.162"
+          },
+          "name": "Facultad de Ciencias Medicas / Universidad Nacional de Asunción"
+        },
+        "id": "155220-adquisicion-productos-quimicos-medicinales",
+        "tag": [
+          "compiled"
+        ],
+        "tender": {
+          "procuringEntity": {
+            "contactPoint": {
+              "email": "uic@med.una.py",
+              "name": "C.P. LILIAN SUÁREZ",
+              "telephone": "421.162"
+            },
+            "name": "Facultad de Ciencias Medicas / Universidad Nacional de Asunción"
+          },
+          "title": "ADQUISICION DE PRODUCTOS QUIMICOS Y MEDICINALES ",
+          "awardPeriod": {
+            "endDate": null,
+            "startDate": "2009-12-18T00:00:00-05:00"
+          },
+          "hasEnquiries": false,
+          "submissionMethod": [
+            "written"
+          ],
+          "enquiryPeriod": {
+            "endDate": "2009-12-18T00:00:00-05:00"
+          },
+          "lots": [
+            {
+              "id": "nYZlDIKXpLc%3D",
+              "items": [
+                "tqV6BTFV74Y%3D",
+                "K%2FeUJbQw38A%3D",
+                "AF01SjYLZYA%3D",
+                "8ZR1sSn6gQs%3D",
+                "9sZ9Cuhoa9I%3D",
+                "cgXDo5IlnP4%3D",
+                "%2F%2B3kHLRRonU%3D",
+                "u9UsCyg46M0%3D",
+                "MwnosgEtTyY%3D",
+                "LnPCcWRn29s%3D",
+                "1Ye5KYSO0lQ%3D",
+                "nQ%2FM1nS2BnM%3D",
+                "H4kqL1f6320%3D",
+                "Bc3pTI5lAow%3D",
+                "17SSBgKR84U%3D",
+                "LxXJqlronL8%3D",
+                "d9t45ST8dL8%3D",
+                "bahat9BOfdU%3D",
+                "0TjlzRHDC1w%3D",
+                "0bwjNM5yHBI%3D",
+                "8eJfsMZp304%3D",
+                "XepJ3ahH8ZI%3D",
+                "Gzd%2F5E2cQrI%3D",
+                "a0mffVCRzcQ%3D",
+                "riWFNvXecH0%3D",
+                "KkMWQXy%2Btvg%3D",
+                "ZoTKpETbAaA%3D",
+                "KOSBdmWaY2A%3D",
+                "ZKHi0fkL6Sw%3D",
+                "MVYeUMtTTs0%3D",
+                "FWauBkMNLTs%3D",
+                "PJUjT1I4vq0%3D",
+                "V6Xc7m6FfQA%3D",
+                "wH3LGt0fCYU%3D",
+                "88ZbqZW%2Fq1g%3D",
+                "9nI%2BFBG2Ui8%3D",
+                "Af8Ou23IxIM%3D",
+                "Fbiw%2FZd5Ijw%3D",
+                "9MmpVYXRodY%3D",
+                "pkgYlHyKO6A%3D",
+                "z79FGaK%2FsQA%3D",
+                "ghB0owDAV0I%3D",
+                "2uMnHsJB%2BOg%3D",
+                "XhuEStAhDFI%3D",
+                "dL3nuXEwLTY%3D",
+                "qBBzlo%2B5R3I%3D",
+                "AuJazPiKvyA%3D",
+                "K%2Baf49LRrPA%3D",
+                "km%2BXMb8Q59k%3D",
+                "6REJ0MXWaZQ%3D",
+                "jdoa36uSqqM%3D"
+              ],
+              "title": "Lote 1"
+            }
+          ],
+          "tenderPeriod": {
+            "endDate": "2009-12-28T00:00:00-05:00",
+            "startDate": null
+          },
+          "documents": [
+            {
+              "language": "es",
+              "format": "text/plain",
+              "title": "Aclaraciones",
+              "id": "SeC2FHIIj%2FE%3D",
+              "documentType": "clarifications",
+              "url": "https://www.contrataciones.gov.py/documentos/download/convocatoria/SeC2FHIIj%252FE%253D"
+            },
+            {
+              "language": "es",
+              "format": "application/pdf",
+              "title": "Condiciones Generales del Contrato - Bienes y Servicios",
+              "id": "oBcHGrOSR9o%3D",
+              "documentType": "Condiciones Generales del Contrato - Bienes y Servicios",
+              "url": "https://www.contrataciones.gov.py/documentos/download/convocatoria/oBcHGrOSR9o%253D"
+            },
+            {
+              "language": "es",
+              "format": "application/pdf",
+              "title": "Instrucción a los Oferentes - Bienes y Servicios",
+              "id": "eiLcmvjRDOc%3D",
+              "documentType": "Instrucción a los Oferentes - Bienes y Servicios",
+              "url": "https://www.contrataciones.gov.py/documentos/download/convocatoria/eiLcmvjRDOc%253D"
+            },
+            {
+              "language": "es",
+              "format": "text/plain",
+              "title": "Pliego de bases y Condiciones",
+              "id": "H4fm%2BtNyOss%3D",
+              "documentType": "biddingDocuments",
+              "url": "https://www.contrataciones.gov.py/documentos/download/convocatoria/H4fm%252BtNyOss%253D"
+            }
+          ],
+          "status": "complete",
+          "id": "155220-adquisicion-productos-quimicos-medicinales",
+          "items": [
+            {
+              "quantity": 2000.0,
+              "id": "tqV6BTFV74Y%3D",
+              "description": "Bromuro de Pancuronio - ampolla",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51152009-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51152009-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 10000.0,
+              "id": "K%2FeUJbQw38A%3D",
+              "description": "Fentanilo ampolla",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142220-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51142220-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 200.0,
+              "id": "AF01SjYLZYA%3D",
+              "description": "Remifentanilo  polvo p/ Inyectable",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142232-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51142232-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 23.0,
+              "id": "8ZR1sSn6gQs%3D",
+              "description": "Cemento Biologico Quirurgico",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42295461-003",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42295461-003"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 350.0,
+              "id": "9sZ9Cuhoa9I%3D",
+              "description": "Humidificador",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/40101903-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "40101903-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 50.0,
+              "id": "cgXDo5IlnP4%3D",
+              "description": "Cateter de aspiracion",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42272011-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42272011-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 3000.0,
+              "id": "%2F%2B3kHLRRonU%3D",
+              "description": "Hoja para bisturi",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42291613-005",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42291613-005"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1000.0,
+              "id": "u9UsCyg46M0%3D",
+              "description": "Papel para esterilizacion",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42281808-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42281808-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 5.0,
+              "id": "MwnosgEtTyY%3D",
+              "description": "Canula de Traqueostomia sin balón",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42142402-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42142402-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1000.0,
+              "id": "LnPCcWRn29s%3D",
+              "description": "Pulsera de identificacion de paciente",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42142303-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42142303-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 5.0,
+              "id": "1Ye5KYSO0lQ%3D",
+              "description": "Cinta testigo para Oxido de Etileno",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42281807-007",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42281807-007"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1000.0,
+              "id": "nQ%2FM1nS2BnM%3D",
+              "description": "Mascara de proteccion p/ gases toxicos",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/46182001-002",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "46182001-002"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 3840.0,
+              "id": "H4kqL1f6320%3D",
+              "description": "Anti HVBc",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-049",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-049"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 3840.0,
+              "id": "Bc3pTI5lAow%3D",
+              "description": " HVBs",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-051",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-051"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 35.0,
+              "id": "17SSBgKR84U%3D",
+              "description": "Suero Anti A",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-043",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-043"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 40.0,
+              "id": "LxXJqlronL8%3D",
+              "description": "Suero Anti B",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-045",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-045"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 35.0,
+              "id": "d9t45ST8dL8%3D",
+              "description": "Suero Anti D",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-016",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-016"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 100.0,
+              "id": "bahat9BOfdU%3D",
+              "description": "Bolsa simple para extraccion de sangre",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42222308-006",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42222308-006"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1200.0,
+              "id": "0TjlzRHDC1w%3D",
+              "description": "Bolsa para extraccion de sangre triple",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42222308-004",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42222308-004"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 10.0,
+              "id": "0bwjNM5yHBI%3D",
+              "description": "Proteina C. Reactivo (P.C.R.)",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116004-003",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116004-003"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 30.0,
+              "id": "8eJfsMZp304%3D",
+              "description": "Tiras Reactivas de Orina",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41113035-013",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41113035-013"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 20000.0,
+              "id": "XepJ3ahH8ZI%3D",
+              "description": "Alprazolam comprimido",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51141919-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51141919-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 500.0,
+              "id": "Gzd%2F5E2cQrI%3D",
+              "description": "Vancomicina - Polvo Liofilizado",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51101591-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51101591-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 500.0,
+              "id": "a0mffVCRzcQ%3D",
+              "description": "Meropenem ampolla",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51101611-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51101611-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 300.0,
+              "id": "riWFNvXecH0%3D",
+              "description": "Imipenem Inyectable",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51101508-004",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51101508-004"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 100.0,
+              "id": "KkMWQXy%2Btvg%3D",
+              "description": "Conector para Bomba de Contraste",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42201809-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42201809-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 10.0,
+              "id": "ZoTKpETbAaA%3D",
+              "description": "Reactivo para HIV",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-047",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-047"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "KOSBdmWaY2A%3D",
+              "description": "HIV 1 y 2 reactivo",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116002-072",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116002-072"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 10.0,
+              "id": "ZKHi0fkL6Sw%3D",
+              "description": "Control de calidad modulo hormonas tiroideas",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116128-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116128-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "MVYeUMtTTs0%3D",
+              "description": "Controles de THS",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116128-010",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116128-010"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 6.0,
+              "id": "FWauBkMNLTs%3D",
+              "description": "T3 Reactivo",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-007",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41111605-007"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 6.0,
+              "id": "PJUjT1I4vq0%3D",
+              "description": "FT4 reactivo",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-006",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41111605-006"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "V6Xc7m6FfQA%3D",
+              "description": "FT4 control",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-005",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41111605-005"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "wH3LGt0fCYU%3D",
+              "description": "FT4 calibrador",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-004",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41111605-004"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 6.0,
+              "id": "88ZbqZW%2Fq1g%3D",
+              "description": "FT3 reactivo",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-003",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41111605-003"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "9nI%2BFBG2Ui8%3D",
+              "description": "FT3 control",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41111605-002",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41111605-002"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 2.0,
+              "id": "Af8Ou23IxIM%3D",
+              "description": "Reactivo para Cito M.V. IgG",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41115819-011",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41115819-011"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "Fbiw%2FZd5Ijw%3D",
+              "description": "Carbamazepina suspension",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51141513-002",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51141513-002"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "9MmpVYXRodY%3D",
+              "description": "Ciclosporina",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116113-024",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116113-024"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 3.0,
+              "id": "pkgYlHyKO6A%3D",
+              "description": "Antigeno Prostatico Especifico (PAS) ",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116105-400",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116105-400"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "z79FGaK%2FsQA%3D",
+              "description": "CEA",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116004-026",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116004-026"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 2.0,
+              "id": "ghB0owDAV0I%3D",
+              "description": "Estradiol",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116105-590",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116105-590"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1.0,
+              "id": "2uMnHsJB%2BOg%3D",
+              "description": "Alfa feto proteina",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41105333-003",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41105333-003"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 10.0,
+              "id": "XhuEStAhDFI%3D",
+              "description": "Solucion de limpieza  - Equipo de  electrolito ",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41116130-205",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41116130-205"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 2.0,
+              "id": "dL3nuXEwLTY%3D",
+              "description": "Tubo de cultivo de vidrio ",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/41121706-002",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "41121706-002"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 50.0,
+              "id": "qBBzlo%2B5R3I%3D",
+              "description": "Filtro Antibacteriano ",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/40101903-003",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "40101903-003"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 35.0,
+              "id": "AuJazPiKvyA%3D",
+              "description": "Sistema de drenaje ventricular externo",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42294722-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42294722-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 2000.0,
+              "id": "K%2Baf49LRrPA%3D",
+              "description": "Sulfato de Atropina ampolla",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51151601-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51151601-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 1000.0,
+              "id": "km%2BXMb8Q59k%3D",
+              "description": "Dobutamina ampolla",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51151732-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51151732-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 3000.0,
+              "id": "6REJ0MXWaZQ%3D",
+              "description": "Dopamina ampolla",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51151737-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51151737-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            },
+            {
+              "quantity": 250.0,
+              "id": "jdoa36uSqqM%3D",
+              "description": "Alfentanilo inyectable",
+              "classification": {
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/51142214-001",
+                "scheme": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "51142214-001"
+              },
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": null,
+                  "currency": "PYG"
+                }
+              }
+            }
+          ],
+          "url": "https://www.contrataciones.gov.py/datos/id/convocatorias/155220-adquisicion-productos-quimicos-medicinales",
+          "value": {
+            "amount": null,
+            "currency": "PYG"
+          }
+        }
+      }
+    }
+  ],
+  "packages": [
+    "https://www.contrataciones.gov.py/datos/id/planning/155220-adquisicion-productos-quimicos-medicinales-ad-referendum-presupuesto-2010.json",
+    "https://www.contrataciones.gov.py/datos/id/tender/155220-adquisicion-productos-quimicos-medicinales.json",
+    "https://www.contrataciones.gov.py/datos/id/award/155220-adquisicion-productos-quimicos-medicinales.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-chaco-internacional-sa-9.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-distribuidora-productos-anestesicos-s-r-l-diproan-7.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-distribuidora-ypacarai-sa-12.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-dutriec-sa-10.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-index-s-a-c-i-11.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-luis-armando-abbate-cordazzo-8.json",
+    "https://www.contrataciones.gov.py/datos/id/contract/155220-vicente-scavone-cia-comercial-e-industrial-sa-13.json"
+  ],
+  "publishedDate": "2018-03-21T14:27:27-04:00",
+  "uri": "https://www.contrataciones.gov.py/datos/record-package/155220.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "publisher": {
+    "uri": "https://contrataciones.gov.py/datos",
+    "legalName": "Dirección Nacional de Contrataciones Públicas, Paraguay",
+    "name": "DNCP - Paraguay"
+  }
+}

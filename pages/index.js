@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Reference from "../components/reference";
-import BubbleChart from "../components/bubble_chart";
+import BubbleView from "../components/bubble_view";
 
 const { Content } = Layout;
 
@@ -12,7 +12,7 @@ export default () => (
     <Layout>
       <Reference />
       <Content>
-        <BubbleChart />
+        <BubbleView />
       </Content>
     </Layout>
     <Footer />
