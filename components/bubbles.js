@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import * as d3 from "d3";
-import { fillColor } from "../utils/utils";
+import { fillColor, getTotalPaid, getTotalAmount } from "../utils/utils";
 import { defaultGroup } from "../utils/constants";
 
 //import tooltip from "./tooltip";
@@ -169,13 +169,18 @@ export default class Bubbles extends React.Component {
     if (!this.state.g) return;
     this.state.g.selectAll(".label").remove();
     this.state.g.selectAll(".monto-label").remove();
-    let totalALaFecha = data.reduce((acc, contrato) => {
-      let totalAdendas = contrato.adendas
-        .filter(v => v.tipo.includes("monto"))
-        .reduce((ac, ad) => ac + ad.monto, 0);
-
-      return acc + contrato.value + totalAdendas;
-    }, 0);
+    if (grouping === "all") {
+      var totalAmount = getTotalAmount(data);
+      var totalPaid = getTotalPaid(data);
+      var paidPercentage = ((totalPaid / totalAmount) * 100).toFixed(0);
+      paidPercentage = isNaN(paidPercentage) ? 0 : paidPercentage;
+      var labelAll =
+        "Total Ejecutado: Gs. " +
+        totalPaid.toLocaleString() +
+        " (" +
+        paidPercentage.toLocaleString() +
+        "% del monto total de contratos)";
+    }
 
     this.state.g
       .selectAll(".label")
@@ -188,7 +193,7 @@ export default class Bubbles extends React.Component {
         let label;
         if (grouping === "all") {
           label =
-            "Monto Total de Contratos: Gs. " + totalALaFecha.toLocaleString();
+            "Monto Total de Contratos: Gs. " + totalAmount.toLocaleString();
         } else {
           label = d.name.toProperCase();
 
@@ -201,15 +206,10 @@ export default class Bubbles extends React.Component {
       .attr("transform", function(d) {
         if (grouping === "all") {
           //este valor se deberia de calcular de manera automatica.
-          return "translate(350 , 20)";
+          return "translate(315 , 80)";
         }
-        return (
-          "translate(" +
-          (d.x - this.getComputedTextLength() / 2) +
-          ", " +
-          (d.y - d.dy / 4 - 25) +
-          ")"
-        );
+        return `translate(${d.x -
+          this.getComputedTextLength() / 2}, ${d.y - d.dy / 4 - 25})`;
       });
 
     this.state.g
@@ -221,16 +221,18 @@ export default class Bubbles extends React.Component {
       .attr("text-anchor", "start")
       .attr("fill", "#666")
       .text(function(d) {
-        return grouping === "all" ? "aaa" : "Gs. " + d.value.toLocaleString();
+        return grouping === "all"
+          ? labelAll
+          : "Gs. " + d.value.toLocaleString();
       })
       .attr("transform", function(d) {
-        return (
-          "translate(" +
-          (d.x - this.getComputedTextLength() / 2) +
-          ", " +
-          (d.y - d.dy / 5 - 25) +
-          ")"
-        );
+        if (grouping === "all") {
+          //este valor se deberia de calcular de manera automatica.
+          return `translate(${d.x - this.getComputedTextLength() / 2} , 100)`;
+        }
+
+        return `translate(${d.x -
+          this.getComputedTextLength() / 2}, ${d.y - d.dy / 5 - 25})`;
       });
   }
 

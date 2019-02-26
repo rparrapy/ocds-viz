@@ -22,6 +22,20 @@ export default class GroupingPicker extends React.Component {
         >
           Proveedor
         </button>
+        <button
+          className={`button ${active === "rubro_nombre" && "active"}`}
+          name="rubro"
+          onClick={this.onBtnClick}
+        >
+          Rubro
+        </button>
+        <button
+          className={`button ${active === "modalidad" && "active"}`}
+          name="modalidad"
+          onClick={this.onBtnClick}
+        >
+          Modalidad
+        </button>
       </div>
     );
   }

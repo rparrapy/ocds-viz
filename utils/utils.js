@@ -33,7 +33,7 @@ export function createNodes(rawData) {
   const radiusScale = d3
     .scalePow()
     .exponent(0.5)
-    .range([2, 85])
+    .range([2, 50])
     .domain([0, maxAmount]);
 
   // Use map() to convert raw data into node data.
@@ -47,6 +47,13 @@ export function createNodes(rawData) {
     year: moment(d.fecha_contrato).year(),
     provider: d.pro_nombre,
     name: d.cod_contrato,
+    modalidad: d.mod_nombre,
+    rubro: d.rubro_nombre,
+    dateSigned: d["fecha_contrato"]
+      ? moment(d["fecha_contrato"])
+      : moment(d["fecha_primer_pago"]),
+    imputaciones: d.imputaciones,
+    adendas: d.adendas ? d.adendas : [],
     x: Math.random() * 900,
     y: Math.random() * 800
   }));
@@ -114,22 +121,82 @@ function getSingleClusterProps() {
       }
     },
     height: height,
-    width: width * colCount * colCount
+    width: width * colCount
   };
 }
 
 function mergeMinorGroups(groups) {
   const sortedKeys = Object.keys(groups).sort(k => groups[k]);
   const resultKeys = sortedKeys.slice(0, maxGroups);
-  const remainder = sortedKeys
-    .slice(maxGroups)
-    .reduce((acc, key) => acc + groups[key], 0);
 
   const result = resultKeys.reduce((acc, key) => {
     acc[key] = groups[key];
     return acc;
   }, {});
 
-  result[defaultGroup] = remainder;
+  if (sortedKeys.length > maxGroups) {
+    const remainder = sortedKeys
+      .slice(maxGroups)
+      .reduce((acc, key) => acc + groups[key], 0);
+
+    result[defaultGroup] = remainder;
+  }
+
   return result;
+}
+
+export function getPaidAmount(contract, until) {
+  if (!contract.imputaciones) return 0;
+  until = until || moment();
+
+  return contract.imputaciones.reduce((sum, payment) => {
+    return moment(payment.fecha_obl) <= until ? sum + payment.monto : sum;
+  }, 0);
+}
+
+export function getPaidAmountAddenda(contract, until) {
+  if (!contract.adendas) return 0;
+  let payments = contract.adendas
+    .filter(
+      ad =>
+        ad.tipo === "Amp de monto" ||
+        ad.tipo === "Reajuste." ||
+        ad.tipo === "Renovación"
+    )
+    .map(ad => ad.imputaciones)
+    .flat();
+
+  return payments.reduce((sum, payment) => {
+    return moment(payment.fecha_obl) <= until ? sum + payment.monto : sum;
+  }, 0);
+}
+
+export function getTotalPaid(contracts, until) {
+  return contracts.reduce(
+    (acc, c) => getPaidAmount(c, until) + getPaidAmountAddenda(c, until) + acc,
+    0
+  );
+}
+
+export function getTotalAmount(contracts, until) {
+  until = until || moment();
+
+  return contracts.reduce((acc, c) => {
+    return c.dateSigned <= until
+      ? c.value + getTotalAmountAddendaPerContract(c, until) + acc
+      : acc;
+  }, 0);
+}
+
+export function getTotalAmountAddendaPerContract(contract, until) {
+  if (!contract.adendas) return 0;
+
+  until = until || moment();
+  return contract.adendas.reduce(
+    (acc, a) =>
+      moment(a["fecha_contrato"]) <= until && a["tipo"] !== "Amp de plazos"
+        ? a["monto"] + acc
+        : acc,
+    0
+  );
 }
