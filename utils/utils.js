@@ -1,6 +1,13 @@
 import * as d3 from "d3";
 import moment from "moment";
-import { width, height, center, maxGroups, defaultGroup } from "./constants";
+import {
+  width,
+  height,
+  colCount,
+  center,
+  maxGroups,
+  defaultGroup
+} from "./constants";
 
 /*
  * This data manipulation function takes the raw data from
@@ -34,7 +41,7 @@ export function createNodes(rawData) {
   // working with data.
   const myNodes = rawData.map(d => ({
     id: d.cod_contrato,
-    radius: radiusScale(+d.monto_total),
+    radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
     value: d.monto_total ? +d.monto_total : 0,
     adendas: d.adendas ? d.adendas : [],
     year: moment(d.fecha_contrato).year(),
@@ -55,7 +62,8 @@ export const fillColor = d3
   .domain(["low", "medium", "high"])
   .range(["#d84b2a", "#beccae", "#7aa25c"]);
 
-export function getClusterProps(width, height, grouping, data) {
+export function getClusterProps(grouping, data) {
+  if (grouping == "all") return getSingleClusterProps();
   const groups = data.reduce((groups, item) => {
     const key = item[grouping];
     groups[key] = groups[key] || 0;
@@ -73,10 +81,10 @@ export function getClusterProps(width, height, grouping, data) {
       const row = Math.trunc(i / colCount);
       let result = {};
       result[k] = {
-        x: width * 0.25 * ((i % colCount) + 1),
+        x: width * colCount * 0.25 * ((i % colCount) + 1),
         y: (height * (row + 1)) / 2,
         name: keys[i],
-        dx: width / colCount,
+        dx: width,
         dy: height,
         row: row,
         col: i % colCount,
@@ -90,6 +98,23 @@ export function getClusterProps(width, height, grouping, data) {
     width: width,
     height: (height * (rowCount + 1)) / 2,
     clusters: clusters
+  };
+}
+
+function getSingleClusterProps() {
+  return {
+    center: center,
+    clusters: {
+      "": {
+        center: center,
+        x: center.x,
+        y: center.y,
+        dx: width,
+        dy: height
+      }
+    },
+    height: height,
+    width: width * colCount * colCount
   };
 }
 

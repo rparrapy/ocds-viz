@@ -7,25 +7,13 @@ import GroupingPicker from "./grouping_picker";
 import Bubbles from "./bubbles";
 
 export default class BubbleView extends React.Component {
-  centerProps = {
-    center: center,
-    clusters: {
-      "": {
-        center: center,
-        x: center.x,
-        y: center.y
-      }
-    },
-    height: height,
-    width: width
-  };
-
+  centerProps = getClusterProps("all");
   state = {
     data: [],
     grouping: "all",
     clusterCenters: this.centerProps.clusters,
-    height: height,
-    width: width
+    height: this.centerProps.height,
+    width: this.centerProps.width
   };
 
   componentDidMount() {
@@ -35,10 +23,7 @@ export default class BubbleView extends React.Component {
   }
 
   onGroupingChanged = newGrouping => {
-    const clusterProps =
-      newGrouping == "all"
-        ? this.centerProps
-        : getClusterProps(width, height, newGrouping, this.state.data);
+    const clusterProps = getClusterProps(newGrouping, this.state.data);
 
     this.setState({
       grouping: newGrouping,
