@@ -193,9 +193,12 @@ export function getTotalAmountAddendaPerContract(contract, until) {
 
   until = until || moment();
   return contract.adendas.reduce(
-    (acc, a) =>
-      moment(a["fecha_contrato"]) <= until && a["tipo"] !== "Amp de plazos"
-        ? a["monto"] + acc
+    (acc, ad) =>
+      moment(ad["fecha_contrato"]) <= until &&
+      (ad.tipo === "Amp de monto" ||
+        ad.tipo === "Reajuste." ||
+        ad.tipo === "Renovación")
+        ? ad["monto"] + acc
         : acc,
     0
   );
