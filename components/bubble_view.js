@@ -44,7 +44,7 @@ export default class BubbleView extends React.Component {
             forceStrength={0.03}
             center={center}
             clusterCenters={clusterCenters}
-            groupByProvider={grouping === "provider"}
+            grouping={grouping}
           />
           {/* {grouping === "year" && (
             <YearsTitles width={width} yearCenters={yearCenters} />

@@ -50,13 +50,13 @@ export default class Bubbles extends React.Component {
     if (nextProps.data !== this.props.data) {
       this.renderBubbles(nextProps.data);
     }
-    if (nextProps.groupByProvider !== this.props.groupByProvider) {
-      this.regroupBubbles(nextProps.groupByProvider, nextProps.clusterCenters);
+    if (nextProps.grouping !== this.props.grouping) {
+      this.regroupBubbles(nextProps.grouping, nextProps.clusterCenters);
     }
     this.renderLabels(
       nextProps.data,
       nextProps.clusterCenters,
-      nextProps.groupByProvider
+      nextProps.grouping
     );
   }
 
@@ -72,7 +72,7 @@ export default class Bubbles extends React.Component {
       this.renderLabels(
         this.props.data,
         this.props.clusterCenters,
-        this.props.groupByProvider
+        this.props.grouping
       );
     });
   }
@@ -84,10 +84,10 @@ export default class Bubbles extends React.Component {
       .attr("cy", d => d.y);
   }
 
-  regroupBubbles = (groupByProvider, clusterCenters) => {
+  regroupBubbles = (grouping, clusterCenters) => {
     const { forceStrength, center } = this.props;
 
-    if (groupByProvider) {
+    if (grouping != "all") {
       this.simulation
         .force(
           "x",
@@ -95,8 +95,8 @@ export default class Bubbles extends React.Component {
             .forceX()
             .strength(forceStrength)
             .x(d =>
-              clusterCenters[d.provider]
-                ? clusterCenters[d.provider].x
+              clusterCenters[d[grouping]]
+                ? clusterCenters[d[grouping]].x
                 : clusterCenters[defaultGroup].x
             )
         )
@@ -106,8 +106,8 @@ export default class Bubbles extends React.Component {
             .forceY()
             .strength(forceStrength)
             .y(d =>
-              clusterCenters[d.provider]
-                ? clusterCenters[d.provider].y
+              clusterCenters[d[grouping]]
+                ? clusterCenters[d[grouping]].y
                 : clusterCenters[defaultGroup].y
             )
         );
@@ -165,11 +165,10 @@ export default class Bubbles extends React.Component {
       });
   }
 
-  renderLabels(data, clusterCenters, groupByProvider) {
+  renderLabels(data, clusterCenters, grouping) {
     if (!this.state.g) return;
     this.state.g.selectAll(".label").remove();
     this.state.g.selectAll(".monto-label").remove();
-    let varname = groupByProvider ? "provider" : "all";
     let totalALaFecha = data.reduce((acc, contrato) => {
       let totalAdendas = contrato.adendas
         .filter(v => v.tipo.includes("monto"))
@@ -187,7 +186,7 @@ export default class Bubbles extends React.Component {
       .attr("text-anchor", "start")
       .text(function(d) {
         let label;
-        if (varname === "all") {
+        if (grouping === "all") {
           label =
             "Monto Total de Contratos: Gs. " + totalALaFecha.toLocaleString();
         } else {
@@ -197,10 +196,10 @@ export default class Bubbles extends React.Component {
             label = label.length > 45 ? label.slice(0, 42) + "..." : label;
           }
         }
-        return d.name !== undefined || varname === "all" ? label : "No aplica";
+        return d.name !== undefined || grouping === "all" ? label : "No aplica";
       })
       .attr("transform", function(d) {
-        if (varname === "all") {
+        if (grouping === "all") {
           //este valor se deberia de calcular de manera automatica.
           return "translate(350 , 20)";
         }
@@ -222,7 +221,7 @@ export default class Bubbles extends React.Component {
       .attr("text-anchor", "start")
       .attr("fill", "#666")
       .text(function(d) {
-        return varname === "all" ? "aaa" : "Gs. " + d.value.toLocaleString();
+        return grouping === "all" ? "aaa" : "Gs. " + d.value.toLocaleString();
       })
       .attr("transform", function(d) {
         return (
@@ -246,7 +245,7 @@ Bubbles.propTypes = {
     y: PropTypes.number.isRequired
   }),
   forceStrength: PropTypes.number.isRequired,
-  groupByProvider: PropTypes.bool.isRequired,
+  grouping: PropTypes.string.isRequired,
   clusterCenters: PropTypes.objectOf(
     PropTypes.shape({
       x: PropTypes.number.isRequired,
