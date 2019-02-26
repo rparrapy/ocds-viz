@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 import moment from "moment";
-import { width, height, center } from "./constants";
+import { width, height, center, maxGroups, defaultGroup } from "./constants";
 
 /*
  * This data manipulation function takes the raw data from
@@ -57,12 +57,14 @@ export const fillColor = d3
 
 export function getClusterProps(width, height, grouping, data) {
   const groups = data.reduce((groups, item) => {
-    const val = item[grouping];
-    groups[val] = groups[val] || 0;
-    groups[val] += item.value;
+    const key = item[grouping];
+    groups[key] = groups[key] || 0;
+    groups[key] += item.value;
     return groups;
   }, {});
-  const keys = Object.keys(groups);
+
+  const topGroups = mergeMinorGroups(groups);
+  const keys = Object.keys(topGroups);
 
   const colCount = 3;
   const rowCount = Math.ceil(keys.length / colCount);
@@ -78,7 +80,7 @@ export function getClusterProps(width, height, grouping, data) {
         dy: height,
         row: row,
         col: i % colCount,
-        value: groups[k]
+        value: topGroups[k]
       };
       return result;
     })
@@ -89,4 +91,20 @@ export function getClusterProps(width, height, grouping, data) {
     height: (height * (rowCount + 1)) / 2,
     clusters: clusters
   };
+}
+
+function mergeMinorGroups(groups) {
+  const sortedKeys = Object.keys(groups).sort(k => groups[k]);
+  const resultKeys = sortedKeys.slice(0, maxGroups);
+  const remainder = sortedKeys
+    .slice(maxGroups)
+    .reduce((acc, key) => acc + groups[key], 0);
+
+  const result = resultKeys.reduce((acc, key) => {
+    acc[key] = groups[key];
+    return acc;
+  }, {});
+
+  result[defaultGroup] = remainder;
+  return result;
 }

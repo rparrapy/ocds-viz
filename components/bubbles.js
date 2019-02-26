@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import * as d3 from "d3";
 import { fillColor } from "../utils/utils";
+import { defaultGroup } from "../utils/constants";
 
 //import tooltip from "./tooltip";
 
@@ -93,14 +94,22 @@ export default class Bubbles extends React.Component {
           d3
             .forceX()
             .strength(forceStrength)
-            .x(d => clusterCenters[d.provider].x)
+            .x(d =>
+              clusterCenters[d.provider]
+                ? clusterCenters[d.provider].x
+                : clusterCenters[defaultGroup].x
+            )
         )
         .force(
           "y",
           d3
             .forceY()
             .strength(forceStrength)
-            .y(d => clusterCenters[d.provider].y)
+            .y(d =>
+              clusterCenters[d.provider]
+                ? clusterCenters[d.provider].y
+                : clusterCenters[defaultGroup].y
+            )
         );
     } else {
       this.simulation
