@@ -31,7 +31,12 @@ export default class Bubbles extends React.Component {
           .strength(forceStrength)
           .y(center.y)
       )
-      .force("charge", d3.forceManyBody().strength(this.charge.bind(this)))
+      .force(
+        "collision",
+        d3.forceCollide().radius(function(d) {
+          return d.radius;
+        })
+      )
       .on("tick", this.ticked.bind(this))
       .stop();
   }
@@ -62,7 +67,7 @@ export default class Bubbles extends React.Component {
 
   componentDidMount() {
     this.setState({ g: d3.select(".bubbles") }, () => {
-      this.renderBubbles(this.props.data);
+      this.renderBubbles(this.props.data, this.props.clusterCenters);
       this.renderLabels(
         this.props.data,
         this.props.clusterCenters,
@@ -78,12 +83,9 @@ export default class Bubbles extends React.Component {
       .attr("cy", d => d.y);
   }
 
-  charge(d) {
-    return -this.props.forceStrength * d.radius ** 2.0;
-  }
-
   regroupBubbles = (groupByProvider, clusterCenters) => {
     const { forceStrength, center } = this.props;
+
     if (groupByProvider) {
       this.simulation
         .force(
@@ -120,8 +122,9 @@ export default class Bubbles extends React.Component {
     this.simulation.alpha(1).restart();
   };
 
-  renderBubbles(data) {
+  renderBubbles(data, clusterCenters) {
     if (!this.state.g) return;
+
     const bubbles = this.state.g.selectAll(".bubble").data(data, d => d.id);
 
     // Exit
