@@ -1,41 +1,28 @@
 import PropTypes from "prop-types";
+import { Radio } from "antd";
 
 export default class GroupingPicker extends React.Component {
-  onBtnClick = event => {
-    this.props.onChanged(event.target.name);
+  state = {
+    active: "all"
   };
+  onBtnClick = event => {
+    this.setState({ active: event.target.value });
+    this.props.onChanged(event.target.value);
+  };
+
   render() {
-    const { active } = this.props;
+    const { active, width } = this.props;
     return (
-      <div className="GroupingPicker">
-        <button
-          className={`button ${active === "all" && "active"}`}
-          name="all"
-          onClick={this.onBtnClick}
-        >
-          Todos
-        </button>
-        <button
-          className={`button ${active === "provider" && "active"}`}
-          name="provider"
-          onClick={this.onBtnClick}
-        >
-          Proveedor
-        </button>
-        <button
-          className={`button ${active === "rubro_nombre" && "active"}`}
-          name="rubro"
-          onClick={this.onBtnClick}
-        >
-          Rubro
-        </button>
-        <button
-          className={`button ${active === "modalidad" && "active"}`}
-          name="modalidad"
-          onClick={this.onBtnClick}
-        >
-          Modalidad
-        </button>
+      <div
+        className="GroupingPicker"
+        style={{ textAlign: "center", width: width, paddingTop: "50px" }}
+      >
+        <Radio.Group value={active} onChange={this.onBtnClick}>
+          <Radio.Button value="all">Todos</Radio.Button>
+          <Radio.Button value="provider">Proveedor</Radio.Button>
+          <Radio.Button value="rubro">Rubro</Radio.Button>
+          <Radio.Button value="modalidad">Modalidad</Radio.Button>
+        </Radio.Group>
       </div>
     );
   }

@@ -37,7 +37,11 @@ export default class BubbleView extends React.Component {
     const { data, grouping, width, height, clusterCenters } = this.state;
     return (
       <div className="App">
-        <GroupingPicker onChanged={this.onGroupingChanged} active={grouping} />
+        <GroupingPicker
+          width={width}
+          onChanged={this.onGroupingChanged}
+          active={grouping}
+        />
         <BubbleChart width={width} height={height}>
           <Bubbles
             data={data}

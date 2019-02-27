@@ -307,6 +307,7 @@ export function getFill(contrato, hasta, svg) {
     contrato.is_adenda && contrato.tipo === "Amp de plazos";
   var cobrado = is_adenda_tiempo ? 0 : getPaidAmount(contrato, limite);
   var ejecutado = is_adenda_tiempo ? 1 : cobrado / contrato.value;
+  ejecutado = isFinite(ejecutado) ? ejecutado : 0;
 
   var fillColor = contrato.is_adenda ? "#00698C" : "#f56727";
   var bgColor = contrato.is_adenda ? "#bfdfff" : "#ffead4";
