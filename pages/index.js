@@ -6,15 +6,34 @@ import BubbleView from "../components/bubble_view";
 
 const { Content } = Layout;
 
-export default () => (
-  <Layout style={{ height: "100vh" }}>
-    <Header />
-    <Layout>
-      <Reference />
-      <Content>
-        <BubbleView />
-      </Content>
-    </Layout>
-    <Footer />
-  </Layout>
-);
+export default class Index extends React.Component {
+  state = {
+    filterValue: "probando"
+  };
+
+  onFilterChanged = newFilterValue => {
+    this.setState({
+      filterValue: newFilterValue
+    });
+  };
+
+  render() {
+    const { filterValue } = this.state;
+
+    return (
+      <Layout style={{ height: "100vh" }}>
+        <Header />
+        <Layout>
+          <Reference
+            filterValue={filterValue}
+            onFilterChanged={this.onFilterChanged}
+          />
+          <Content>
+            <BubbleView filterValue={filterValue} />
+          </Content>
+        </Layout>
+        <Footer />
+      </Layout>
+    );
+  }
+}

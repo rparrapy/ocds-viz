@@ -1,11 +1,6 @@
 import PropTypes from "prop-types";
 import * as d3 from "d3";
-import {
-  fillColor,
-  getTotalPaid,
-  getTotalAmount,
-  getPaidAmount
-} from "../utils/utils";
+import { getTotalPaid, getTotalAmount, getPaidAmount } from "../utils/utils";
 import { defaultGroup } from "../utils/constants";
 import moment from "moment";
 
@@ -55,6 +50,9 @@ export default class Bubbles extends React.Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.data !== this.props.data) {
       this.renderBubbles(nextProps.data);
+    }
+    if (nextProps.grouping !== this.props.grouping) {
+      this.regroupBubbles(nextProps.grouping, nextProps.clusterCenters);
     }
     if (nextProps.grouping !== this.props.grouping) {
       this.regroupBubbles(nextProps.grouping, nextProps.clusterCenters);

@@ -13,12 +13,19 @@ export default class BubbleView extends React.Component {
     grouping: "all",
     clusterCenters: this.centerProps.clusters,
     height: this.centerProps.height,
-    width: this.centerProps.width
+    width: this.centerProps.width,
+    filterValue: this.props.filterValue
   };
 
   componentDidMount() {
     this.setState({
       data: createNodes(dataset.contratos)
+    });
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      filterValue: nextProps.filterValue
     });
   }
 
@@ -34,9 +41,17 @@ export default class BubbleView extends React.Component {
   };
 
   render() {
-    const { data, grouping, width, height, clusterCenters } = this.state;
+    const {
+      data,
+      grouping,
+      width,
+      height,
+      clusterCenters,
+      filterValue
+    } = this.state;
     return (
       <div className="App">
+        <p>{filterValue}</p>
         <GroupingPicker
           width={width}
           onChanged={this.onGroupingChanged}
@@ -49,6 +64,7 @@ export default class BubbleView extends React.Component {
             center={center}
             clusterCenters={clusterCenters}
             grouping={grouping}
+            filterValue={filterValue}
           />
           {/* {grouping === "year" && (
             <YearsTitles width={width} yearCenters={yearCenters} />

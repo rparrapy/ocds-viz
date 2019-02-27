@@ -2,7 +2,7 @@ import { Layout, Input } from "antd";
 
 const { Sider } = Layout;
 
-export default () => (
+export default ({ filterValue, onFilterChanged }) => (
   <Sider
     width={300}
     style={{
@@ -14,7 +14,12 @@ export default () => (
   >
     <p>Buscador</p>
     <hr />
-    <Input style={{ marginBottom: 15 }} placeholder="Buscar..." />
+    <Input
+      style={{ marginBottom: 15 }}
+      placeholder="Buscar..."
+      defaultValue={filterValue}
+      onChange={e => onFilterChanged(e.target.value)}
+    />
     <p>Referencias</p>
     <hr />
 
