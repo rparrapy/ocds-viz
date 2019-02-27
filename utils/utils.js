@@ -64,10 +64,10 @@ export function createNodes(rawData) {
   return myNodes;
 }
 
-export const fillColor = d3
-  .scaleOrdinal()
-  .domain(["low", "medium", "high"])
-  .range(["#d84b2a", "#beccae", "#7aa25c"]);
+// export const fillColor = d3
+//   .scaleOrdinal()
+//   .domain(["low", "medium", "high"])
+//   .range(["#d84b2a", "#beccae", "#7aa25c"]);
 
 export function getClusterProps(grouping, data) {
   if (grouping == "all") return getSingleClusterProps();

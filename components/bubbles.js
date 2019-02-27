@@ -1,7 +1,13 @@
 import PropTypes from "prop-types";
 import * as d3 from "d3";
-import { fillColor, getTotalPaid, getTotalAmount } from "../utils/utils";
+import {
+  fillColor,
+  getTotalPaid,
+  getTotalAmount,
+  getPaidAmount
+} from "../utils/utils";
 import { defaultGroup } from "../utils/constants";
+import moment from "moment";
 
 //import tooltip from "./tooltip";
 
@@ -147,9 +153,8 @@ export default class Bubbles extends React.Component {
       .attr("r", 0)
       .attr("cx", d => d.x)
       .attr("cy", d => d.y)
-      .attr("fill", d => fillColor(d.group))
-      .attr("stroke", d => d3.rgb(fillColor(d.group)).darker())
-      .attr("stroke-width", 2)
+      .attr("fill", d => getFill(d, null, this.state.g))
+      .attr("stroke", d => getStroke(d))
       .on("mouseover", showDetail) // eslint-disable-line
       .on("mouseout", hideDetail); // eslint-disable-line
 
@@ -291,7 +296,86 @@ export function showDetail(d) {
  */
 export function hideDetail(d) {
   // reset outline
-  d3.select(this).attr("stroke", d3.rgb(fillColor(d.group)).darker());
-
+  d3.select(this).attr("stroke", getStroke(d));
   //tooltip.hideTooltip();
+}
+
+export function getFill(contrato, hasta, svg) {
+  var limite = hasta || moment();
+  //Cambiamos un poco para tener en cuenta las adendas de tiempo
+  var is_adenda_tiempo =
+    contrato.is_adenda && contrato.tipo === "Amp de plazos";
+  var cobrado = is_adenda_tiempo ? 0 : getPaidAmount(contrato, limite);
+  var ejecutado = is_adenda_tiempo ? 1 : cobrado / contrato.value;
+
+  var fillColor = contrato.is_adenda ? "#00698C" : "#f56727";
+  var bgColor = contrato.is_adenda ? "#bfdfff" : "#ffead4";
+  var gradientId = "grad-" + contrato.id;
+
+  //Agrego aca, pero deberiamos hacer en otra parte
+  contrato.ejecutado = ejecutado.toFixed(2);
+  contrato.monto_pagado = cobrado;
+
+  var imgId = "img-" + contrato.cod_contrato;
+  //var imagen = $("#" + imgId);
+  //var componente = $("#componentes .active").attr("id");
+  // if (!componente || contrato.componente === componente) {
+  //   //console.log('mostrar imagen');
+  //   imagen.show();
+  // }
+
+  if (hasta) {
+    d3.select("#" + gradientId + " stop.color")
+      .attr("offset", ejecutado.toFixed(2))
+      .style("stop-color", fillColor);
+    d3.select("#" + gradientId + " stop.blank")
+      .attr("offset", ejecutado.toFixed(2))
+      .style("stop-color", bgColor);
+
+    if (contrato["adendas"]) {
+      // if (
+      //   _.every(contrato.adendas, function(adenda) {
+      //     return moment(adenda.fecha_contrato) > limite;
+      //   })
+      // ) {
+      //   imagen.hide();
+      // }
+    }
+    if (!contrato.is_adenda) {
+      var displayContrato = d3
+        .select("#circulo" + contrato.id)
+        .style("display");
+
+      // if (displayContrato == "none") {
+      //   imagen.hide();
+      // }
+    }
+  } else {
+    if (d3.select("#" + gradientId).empty()) {
+      var grad = svg
+        .append("defs")
+        .append("linearGradient")
+        .attr("id", gradientId)
+        .attr("x1", "0%")
+        .attr("x2", "0%")
+        .attr("y1", "100%")
+        .attr("y2", "0%");
+      grad
+        .append("stop")
+        .attr("class", "color")
+        .attr("offset", ejecutado.toFixed(2))
+        .style("stop-color", fillColor);
+      grad
+        .append("stop")
+        .attr("class", "blank")
+        .attr("offset", ejecutado.toFixed(2))
+        .style("stop-color", bgColor);
+    }
+  }
+
+  return "url(#" + gradientId + ")";
+}
+
+export function getStroke(contrato, hasta) {
+  return contrato.is_adenda ? "#006289" : "#ca4600";
 }
