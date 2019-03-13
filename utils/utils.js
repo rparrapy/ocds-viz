@@ -46,7 +46,7 @@ export function createNodes(rawData) {
     adendas: d.adendas ? d.adendas : [],
     year: moment(d.fecha_contrato).year(),
     provider: d.pro_nombre,
-    name: d.llamado_nombre,
+    name: d.llamado_nombre ? d.llamado_nombre : "",
     modalidad: d.mod_nombre,
     rubro: d.rubro_nombre,
     dateSigned: d["fecha_contrato"]

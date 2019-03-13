@@ -1,10 +1,15 @@
 import PropTypes from "prop-types";
 import * as d3 from "d3";
-import { getTotalPaid, getTotalAmount, getPaidAmount } from "../utils/utils";
+import {
+  getTotalPaid,
+  getTotalAmount,
+  getPaidAmount,
+  getTotalAmountAddendaPerContract,
+  getPaidAmountAddenda
+} from "../utils/utils";
 import { defaultGroup } from "../utils/constants";
 import moment from "moment";
-
-//import tooltip from "./tooltip";
+import { floatingTooltip } from "./tooltip";
 
 export default class Bubbles extends React.Component {
   constructor(props) {
@@ -280,24 +285,33 @@ Bubbles.propTypes = {
   )
 };
 
+let tooltip = null;
 /*
  * Function called on mouseover to display the
  * details of a bubble in the tooltip.
  */
 export function showDetail(d) {
   // change outline to indicate hover state.
+  tooltip = tooltip || floatingTooltip("gates_tooltip", 240);
   d3.select(this).attr("stroke", "black");
+  const totalAmount = d.value + getTotalAmountAddendaPerContract(d);
+  const totalPaid = getPaidAmount(d) + getPaidAmountAddenda(d);
 
   const content =
-    `<span class="name">Title: </span><span class="value">${
-      d.name
-    }</span><br/>` +
-    `<span class="name">Amount: </span><span class="value">$${
-      d.value
-    }</span><br/>` +
-    `<span class="name">Year: </span><span class="value">${d.year}</span>`;
+    `<span class="name">${
+      d.name.length > 80 ? d.name.slice(0, 77) + "..." : d.name
+    }</span><br/><br/>` +
+    `<span class="name">${d.provider}</span><br/><br/>` +
+    `<span class="value">Monto total: Gs. ${totalAmount.toLocaleString()}</span>` +
+    `<span class="value" style="float: right">Monto ejecutado:&nbsp&nbsp<span class="percentage" style="float: right">${(
+      (totalPaid / totalAmount) *
+      100
+    ).toFixed(0)}%</span></span><br/>` +
+    "<hr>" +
+    `<span class="value" style="display:table;
+    margin:0 auto;">Click en el círculo para ver más detalles</span>`;
 
-  //tooltip.showTooltip(content, d3.event);
+  tooltip.showTooltip(content, d3.event);
 }
 
 /*
@@ -306,7 +320,7 @@ export function showDetail(d) {
 export function hideDetail(d) {
   // reset outline
   d3.select(this).attr("stroke", getStroke(d));
-  //tooltip.hideTooltip();
+  tooltip.hideTooltip();
 }
 
 export function getFill(contrato, hasta, svg) {
