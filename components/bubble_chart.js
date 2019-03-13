@@ -1,11 +1,28 @@
 import PropTypes from "prop-types";
 
-export default function BubbleChart({ width, height, children }) {
-  return (
-    <svg className="bubbleChart" width={width} height={height}>
-      {children}
-    </svg>
-  );
+export default class BubbleChart extends React.Component {
+  state = {
+    active: "all",
+    show: false
+  };
+
+  componentDidMount() {
+    this.setState({ show: true });
+  }
+
+  render() {
+    const { height, width, children } = this.props;
+    return (
+      <svg
+        className="bubbleChart"
+        style={{ display: this.state.show ? "block" : "none" }}
+        width={width}
+        height={height}
+      >
+        {children}
+      </svg>
+    );
+  }
 }
 
 BubbleChart.propTypes = {

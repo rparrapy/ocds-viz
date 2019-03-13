@@ -3,8 +3,14 @@ import { Radio } from "antd";
 
 export default class GroupingPicker extends React.Component {
   state = {
-    active: "all"
+    active: "all",
+    show: false
   };
+
+  componentDidMount() {
+    this.setState({ show: true });
+  }
+
   onBtnClick = event => {
     this.setState({ active: event.target.value });
     this.props.onChanged(event.target.value);
@@ -15,7 +21,12 @@ export default class GroupingPicker extends React.Component {
     return (
       <div
         className="GroupingPicker"
-        style={{ textAlign: "center", width: width, paddingTop: "50px" }}
+        style={{
+          textAlign: "center",
+          width: width,
+          paddingTop: "50px",
+          visibility: this.state.show ? "visible" : "hidden"
+        }}
       >
         <Radio.Group value={active} onChange={this.onBtnClick}>
           <Radio.Button value="all">Todos</Radio.Button>

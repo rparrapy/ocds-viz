@@ -42,7 +42,8 @@ export default class BubbleView extends React.Component {
       grouping: newGrouping,
       center: clusterProps.center,
       clusterCenters: clusterProps.clusters,
-      height: clusterProps.height
+      height: clusterProps.height,
+      width: clusterProps.width
     });
   };
 

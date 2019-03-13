@@ -69,7 +69,7 @@ export function createNodes(rawData) {
 //   .domain(["low", "medium", "high"])
 //   .range(["#d84b2a", "#beccae", "#7aa25c"]);
 
-export function getClusterProps(grouping, data, filterValue) {
+export function getClusterProps(grouping, data) {
   if (grouping == "all") return getSingleClusterProps();
   const groups = data.reduce((groups, item) => {
     const key = item[grouping];
@@ -102,7 +102,7 @@ export function getClusterProps(grouping, data, filterValue) {
     .reduce((acc, current) => ({ ...acc, ...current }), {});
   return {
     center: { x: width / 2, y: (height * rowCount) / 2 },
-    width: width,
+    width: width * colCount,
     height: (height * (rowCount + 1)) / 2,
     clusters: clusters
   };
