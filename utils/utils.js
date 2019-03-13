@@ -46,7 +46,7 @@ export function createNodes(rawData) {
     adendas: d.adendas ? d.adendas : [],
     year: moment(d.fecha_contrato).year(),
     provider: d.pro_nombre,
-    name: d.cod_contrato,
+    name: d.llamado_nombre,
     modalidad: d.mod_nombre,
     rubro: d.rubro_nombre,
     dateSigned: d["fecha_contrato"]
@@ -69,7 +69,7 @@ export function createNodes(rawData) {
 //   .domain(["low", "medium", "high"])
 //   .range(["#d84b2a", "#beccae", "#7aa25c"]);
 
-export function getClusterProps(grouping, data) {
+export function getClusterProps(grouping, data, filterValue) {
   if (grouping == "all") return getSingleClusterProps();
   const groups = data.reduce((groups, item) => {
     const key = item[grouping];

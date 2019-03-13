@@ -48,15 +48,18 @@ export default class Bubbles extends React.Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.data !== this.props.data) {
-      this.renderBubbles(nextProps.data);
+    let filteredData = nextProps.data;
+    if (nextProps.filterValue !== "") {
+      filteredData = this.filterBubbles(nextProps.data, nextProps.filterValue);
+    }
+
+    if (filteredData !== this.props.data) {
+      this.renderBubbles(filteredData);
     }
     if (nextProps.grouping !== this.props.grouping) {
       this.regroupBubbles(nextProps.grouping, nextProps.clusterCenters);
     }
-    if (nextProps.grouping !== this.props.grouping) {
-      this.regroupBubbles(nextProps.grouping, nextProps.clusterCenters);
-    }
+
     this.renderLabels(
       nextProps.data,
       nextProps.clusterCenters,
@@ -89,6 +92,8 @@ export default class Bubbles extends React.Component {
   }
 
   regroupBubbles = (grouping, clusterCenters) => {
+    console.log(grouping);
+    console.log(clusterCenters);
     const { forceStrength, center } = this.props;
 
     if (grouping != "all") {
@@ -237,6 +242,12 @@ export default class Bubbles extends React.Component {
         return `translate(${d.x -
           this.getComputedTextLength() / 2}, ${d.y - d.dy / 5 - 25})`;
       });
+  }
+
+  filterBubbles(data, filterValue) {
+    return data.filter(
+      s => s.name && s.name.toLowerCase().includes(filterValue.toLowerCase())
+    );
   }
 
   render() {

@@ -24,13 +24,19 @@ export default class BubbleView extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      filterValue: nextProps.filterValue
-    });
+    if (nextProps.filterValue !== this.props.filterValue) {
+      this.setState({
+        filterValue: nextProps.filterValue
+      });
+    }
   }
 
   onGroupingChanged = newGrouping => {
-    const clusterProps = getClusterProps(newGrouping, this.state.data);
+    const clusterProps = getClusterProps(
+      newGrouping,
+      this.state.data,
+      this.state.filterValue
+    );
 
     this.setState({
       grouping: newGrouping,
@@ -51,7 +57,6 @@ export default class BubbleView extends React.Component {
     } = this.state;
     return (
       <div className="App">
-        <p>{filterValue}</p>
         <GroupingPicker
           width={width}
           onChanged={this.onGroupingChanged}

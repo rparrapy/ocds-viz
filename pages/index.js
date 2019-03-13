@@ -8,7 +8,7 @@ const { Content } = Layout;
 
 export default class Index extends React.Component {
   state = {
-    filterValue: "probando"
+    filterValue: ""
   };
 
   onFilterChanged = newFilterValue => {
