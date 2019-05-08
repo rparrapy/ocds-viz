@@ -1,10 +1,12 @@
 import * as d3 from "d3";
 import { dataset } from "../data/data";
-import { width, height, center } from "../utils/constants";
+import { center } from "../utils/constants";
 import { createNodes, getClusterProps } from "../utils/utils";
 import BubbleChart from "./bubble_chart";
 import GroupingPicker from "./grouping_picker";
 import Bubbles from "./bubbles";
+import DateSlider from "./date_slider";
+import moment from "moment";
 
 export default class BubbleView extends React.Component {
   centerProps = getClusterProps("all");
@@ -14,7 +16,8 @@ export default class BubbleView extends React.Component {
     clusterCenters: this.centerProps.clusters,
     height: this.centerProps.height,
     width: this.centerProps.width,
-    filterValue: this.props.filterValue
+    filterValue: this.props.filterValue,
+    until: moment()
   };
 
   componentDidMount() {
@@ -32,11 +35,7 @@ export default class BubbleView extends React.Component {
   }
 
   onGroupingChanged = newGrouping => {
-    const clusterProps = getClusterProps(
-      newGrouping,
-      this.state.data,
-      this.state.filterValue
-    );
+    const clusterProps = getClusterProps(newGrouping, this.state.data);
 
     this.setState({
       grouping: newGrouping,
@@ -47,6 +46,10 @@ export default class BubbleView extends React.Component {
     });
   };
 
+  onDateLimitChanged = until => {
+    this.setState({ until: until });
+  };
+
   render() {
     const {
       data,
@@ -54,7 +57,8 @@ export default class BubbleView extends React.Component {
       width,
       height,
       clusterCenters,
-      filterValue
+      filterValue,
+      until
     } = this.state;
     return (
       <div className="App">
@@ -71,11 +75,14 @@ export default class BubbleView extends React.Component {
             clusterCenters={clusterCenters}
             grouping={grouping}
             filterValue={filterValue}
+            until={until}
           />
-          {/* {grouping === "year" && (
-            <YearsTitles width={width} yearCenters={yearCenters} />
-          )} */}
         </BubbleChart>
+        <DateSlider
+          data={data}
+          width={width}
+          onChanged={this.onDateLimitChanged}
+        />
       </div>
     );
   }

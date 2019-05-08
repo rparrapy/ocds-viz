@@ -54,13 +54,22 @@ export default class Bubbles extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     let filteredData = nextProps.data;
-    if (nextProps.filterValue !== "") {
-      filteredData = this.filterBubbles(nextProps.data, nextProps.filterValue);
+    if (nextProps.filterValue !== "" || nextProps.until !== this.props.until) {
+      filteredData = this.filterBubbles(
+        nextProps.data,
+        nextProps.filterValue,
+        nextProps.until
+      );
     }
 
     if (filteredData !== this.props.data) {
-      this.renderBubbles(filteredData);
+      this.renderBubbles(filteredData, nextProps.until);
     }
+
+    if (nextProps.until !== this.props.until) {
+      this.refillBubbles(nextProps.until);
+    }
+
     if (nextProps.grouping !== this.props.grouping) {
       this.regroupBubbles(nextProps.grouping, nextProps.clusterCenters);
     }
@@ -80,7 +89,7 @@ export default class Bubbles extends React.Component {
 
   componentDidMount() {
     this.setState({ g: d3.select(".bubbles") }, () => {
-      this.renderBubbles(this.props.data, this.props.clusterCenters);
+      this.renderBubbles(this.props.data);
       this.renderLabels(
         this.props.data,
         this.props.clusterCenters,
@@ -97,8 +106,6 @@ export default class Bubbles extends React.Component {
   }
 
   regroupBubbles = (grouping, clusterCenters) => {
-    console.log(grouping);
-    console.log(clusterCenters);
     const { forceStrength, center } = this.props;
 
     if (grouping != "all") {
@@ -145,7 +152,7 @@ export default class Bubbles extends React.Component {
     this.simulation.alpha(1).restart();
   };
 
-  renderBubbles(data, clusterCenters) {
+  renderBubbles(data, until) {
     if (!this.state.g) return;
 
     const bubbles = this.state.g.selectAll(".bubble").data(data, d => d.id);
@@ -158,10 +165,15 @@ export default class Bubbles extends React.Component {
       .enter()
       .append("circle")
       .classed("bubble", true)
+      .attr("id", function(d) {
+        return d.is_adenda
+          ? "circulo-adenda-" + d.padre + d.pos
+          : "circulo-" + d.id;
+      })
       .attr("r", 0)
       .attr("cx", d => d.x)
       .attr("cy", d => d.y)
-      .attr("fill", d => getFill(d, null, this.state.g))
+      .attr("fill", d => getFill(d, until, this.state.g))
       .attr("stroke", d => getStroke(d))
       .on("mouseover", showDetail) // eslint-disable-line
       .on("mouseout", hideDetail); // eslint-disable-line
@@ -176,6 +188,11 @@ export default class Bubbles extends React.Component {
           .alpha(1)
           .restart();
       });
+  }
+
+  refillBubbles(until) {
+    const bubbles = this.state.g.selectAll("circle");
+    bubbles.attr("fill", d => getFill(d, until, this.state.g));
   }
 
   renderLabels(data, clusterCenters, grouping) {
@@ -249,9 +266,12 @@ export default class Bubbles extends React.Component {
       });
   }
 
-  filterBubbles(data, filterValue) {
+  filterBubbles(data, filterValue, until) {
     return data.filter(
-      s => s.name && s.name.toLowerCase().includes(filterValue.toLowerCase())
+      s =>
+        s.name &&
+        s.name.toLowerCase().includes(filterValue.toLowerCase()) &&
+        s.dateSigned <= until
     );
   }
 
@@ -367,7 +387,7 @@ export function getFill(contrato, hasta, svg) {
     }
     if (!contrato.is_adenda) {
       var displayContrato = d3
-        .select("#circulo" + contrato.id)
+        .select("#circulo-" + contrato.id)
         .style("display");
 
       // if (displayContrato == "none") {

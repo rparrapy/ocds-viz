@@ -39,24 +39,26 @@ export function createNodes(rawData) {
   // Use map() to convert raw data into node data.
   // Checkout http://learnjsdata.com/ for more on
   // working with data.
-  const myNodes = rawData.map(d => ({
-    id: d.cod_contrato,
-    radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
-    value: d.monto_total ? +d.monto_total : 0,
-    adendas: d.adendas ? d.adendas : [],
-    year: moment(d.fecha_contrato).year(),
-    provider: d.pro_nombre,
-    name: d.llamado_nombre ? d.llamado_nombre : "",
-    modalidad: d.mod_nombre,
-    rubro: d.rubro_nombre,
-    dateSigned: d["fecha_contrato"]
-      ? moment(d["fecha_contrato"])
-      : moment(d["fecha_primer_pago"]),
-    imputaciones: d.imputaciones,
-    adendas: d.adendas ? d.adendas : [],
-    x: Math.random() * 900,
-    y: Math.random() * 800
-  }));
+  const myNodes = rawData
+    .filter(d => d["fecha_contrato"] || d["fecha_primer_pago"])
+    .map(d => ({
+      id: d.cod_contrato,
+      radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
+      value: d.monto_total ? +d.monto_total : 0,
+      adendas: d.adendas ? d.adendas : [],
+      year: moment(d.fecha_contrato).year(),
+      provider: d.pro_nombre,
+      name: d.llamado_nombre ? d.llamado_nombre : "",
+      modalidad: d.mod_nombre,
+      rubro: d.rubro_nombre,
+      dateSigned: d["fecha_contrato"]
+        ? moment(d["fecha_contrato"])
+        : moment(d["fecha_primer_pago"]),
+      imputaciones: d.imputaciones,
+      adendas: d.adendas ? d.adendas : [],
+      x: Math.random() * 900,
+      y: Math.random() * 800
+    }));
 
   // sort them descending to prevent occlusion of smaller nodes.
   myNodes.sort((a, b) => b.value - a.value);
