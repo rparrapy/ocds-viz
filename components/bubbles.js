@@ -102,7 +102,10 @@ export default class Bubbles extends React.Component {
     this.state.g
       .selectAll(".bubble")
       .attr("cx", d => d.x)
-      .attr("cy", d => d.y);
+      .attr("cy", d => {
+        renderImage(this.state.g, d);
+        return d.y;
+      });
   }
 
   regroupBubbles = (grouping, clusterCenters) => {
@@ -156,6 +159,10 @@ export default class Bubbles extends React.Component {
     if (!this.state.g) return;
 
     const bubbles = this.state.g.selectAll(".bubble").data(data, d => d.id);
+
+    this.state.g
+      .selectAll("image")
+      .attr("display", d => getImageDisplay(d, data));
 
     // Exit
     bubbles.exit().remove();
@@ -422,4 +429,62 @@ export function getFill(contrato, hasta, svg) {
 
 export function getStroke(contrato, hasta) {
   return contrato.is_adenda ? "#006289" : "#ca4600";
+}
+
+export function renderImage(svg, contrato) {
+  var imgId = "img-" + contrato.id;
+  var imagen = d3.select("#" + imgId);
+  if (contrato["adendas"] && contrato["adendas"].length > 0) {
+    var src_img = null;
+
+    if (
+      contrato["adendas"].filter(adenda => {
+        return adenda.tipo === "Amp de plazos";
+      }).length > 0
+    ) {
+      src_img = "ico_tiempo.svg";
+    }
+
+    if (
+      contrato["adendas"].filter(adenda => {
+        return (
+          adenda.tipo === "Amp de monto" ||
+          adenda.tipo === "Amp. de monto" ||
+          adenda.tipo === "Reajuste." ||
+          adenda.tipo === "Renovación"
+        );
+      }).length > 0
+    ) {
+      if (src_img === null) {
+        src_img = "ico_dinero.svg";
+      } else {
+        src_img = "ico_ambos.png";
+      }
+    }
+
+    var imgScale = src_img === "ico_ambos.png" ? 2 : 4;
+
+    if (src_img) {
+      if (imagen.empty()) {
+        imagen = svg
+          .data([contrato])
+          .append("image")
+          .attr("id", imgId)
+          .attr("xlink:href", "static/images/" + src_img)
+          .attr("width", (contrato.radius / imgScale) * 2)
+          .attr("height", (contrato.radius / imgScale) * 2)
+          .on("mouseover", _ => {
+            showDetail(contrato);
+          });
+      }
+      imagen
+        .attr("x", contrato.x - contrato.radius / imgScale)
+        .attr("y", contrato.y - contrato.radius / imgScale);
+    }
+  }
+}
+
+export function getImageDisplay(image, data) {
+  const filtered = data.filter(d => d.id === image.id);
+  return filtered.length > 0 ? "block" : "none";
 }
