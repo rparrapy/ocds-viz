@@ -26,15 +26,7 @@ export function createNodes(rawData) {
   // note we have to ensure the total_amount is a number.
 
   rawData = rawData.filter(c => c.cod_contrato);
-  const maxAmount = d3.max(rawData, d => +d.monto_total);
-
-  // Sizes bubbles based on area.
-  // @v4: new flattened scale names.
-  const radiusScale = d3
-    .scalePow()
-    .exponent(0.5)
-    .range([2, 50])
-    .domain([0, maxAmount]);
+  const radiusScale = getRadiusScale(rawData);
 
   // Use map() to convert raw data into node data.
   // Checkout http://learnjsdata.com/ for more on
@@ -63,7 +55,49 @@ export function createNodes(rawData) {
   // sort them descending to prevent occlusion of smaller nodes.
   myNodes.sort((a, b) => b.value - a.value);
 
-  return myNodes;
+  let adendas = myNodes
+    .filter(_ => _.adendas)
+    .flatMap(c => {
+      return c.adendas
+        .filter(
+          _ =>
+            _.tipo === "Amp de monto" ||
+            _.tipo === "Amp. de monto" ||
+            _.tipo === "Reajuste." ||
+            _.tipo === "Renovación"
+        )
+        .map((a, i) => {
+          let adenda = Object.assign({}, c);
+          adenda.is_adenda = true;
+          adenda.radius = radiusScale(a.monto);
+          adenda.dateSigned = a["fecha_contrato"]
+            ? moment(a["fecha_contrato"])
+            : moment(a["fecha_primer_pago"]);
+          adenda.x = c.x + c.radius - adenda.radius;
+          adenda.y = c.y + c.radius - adenda.radius;
+          adenda.pos = i;
+          adenda.adendas = [];
+          adenda.id = a.cod_contrato;
+          adenda.value = a.monto;
+          adenda.padre = c;
+          adenda.imputaciones = a.imputaciones;
+          return adenda;
+        });
+    });
+
+  return myNodes.concat(adendas);
+}
+
+export function getRadiusScale(data, key = "monto_total") {
+  const maxAmount = d3.max(data, d => +d[key]);
+
+  // Sizes bubbles based on area.
+  // @v4: new flattened scale names.
+  return d3
+    .scalePow()
+    .exponent(0.5)
+    .range([2, 50])
+    .domain([0, maxAmount]);
 }
 
 // export const fillColor = d3

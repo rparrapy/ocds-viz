@@ -5,7 +5,8 @@ import {
   getTotalAmount,
   getPaidAmount,
   getTotalAmountAddendaPerContract,
-  getPaidAmountAddenda
+  getPaidAmountAddenda,
+  getRadiusScale
 } from "../utils/utils";
 import { defaultGroup } from "../utils/constants";
 import moment from "moment";
@@ -38,12 +39,7 @@ export default class Bubbles extends React.Component {
           .strength(forceStrength)
           .y(center.y)
       )
-      .force(
-        "collision",
-        d3.forceCollide().radius(function(d) {
-          return d.radius;
-        })
-      )
+      .force("collision", d3.forceCollide().radius(d => d.radius * 1.02))
       .on("tick", this.ticked.bind(this))
       .stop();
   }
@@ -54,6 +50,7 @@ export default class Bubbles extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     let filteredData = nextProps.data;
+
     if (nextProps.filterValue !== "" || nextProps.until !== this.props.until) {
       filteredData = this.filterBubbles(
         nextProps.data,
@@ -99,12 +96,22 @@ export default class Bubbles extends React.Component {
   }
 
   ticked() {
+    let angulos = [0, 72, 150, 216, 288, 360];
+
     this.state.g
       .selectAll(".bubble")
-      .attr("cx", d => d.x)
+      .attr("cx", d =>
+        d.is_adenda
+          ? d.padre.x +
+            Math.cos((angulos[d.pos] * 180) / Math.PI) * d.padre.radius
+          : d.x
+      )
       .attr("cy", d => {
         renderImage(this.state.g, d);
-        return d.y;
+        return d.is_adenda
+          ? d.padre.y -
+              Math.sin((angulos[d.pos] * 180) / Math.PI) * d.padre.radius
+          : d.y;
       });
   }
 
@@ -157,6 +164,7 @@ export default class Bubbles extends React.Component {
 
   renderBubbles(data, until) {
     if (!this.state.g) return;
+    const radiusScale = getRadiusScale(data, "value");
 
     const bubbles = this.state.g.selectAll(".bubble").data(data, d => d.id);
 
@@ -174,7 +182,7 @@ export default class Bubbles extends React.Component {
       .classed("bubble", true)
       .attr("id", function(d) {
         return d.is_adenda
-          ? "circulo-adenda-" + d.padre + d.pos
+          ? "circulo-adenda-" + d.padre + "-" + d.pos
           : "circulo-" + d.id;
       })
       .attr("r", 0)
@@ -393,10 +401,9 @@ export function getFill(contrato, hasta, svg) {
       // }
     }
     if (!contrato.is_adenda) {
-      var displayContrato = d3
-        .select("#circulo-" + contrato.id)
-        .style("display");
-
+      // var displayContrato = d3
+      //   .select("#circulo-" + contrato.id)
+      //   .style("display");
       // if (displayContrato == "none") {
       //   imagen.hide();
       // }
