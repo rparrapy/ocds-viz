@@ -9,6 +9,10 @@ import {
   defaultGroup
 } from "./constants";
 
+function formatNumber(num) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+}
+
 /*
  * This data manipulation function takes the raw data from
  * the CSV file and converts it into an array of node objects.
@@ -37,9 +41,11 @@ export function createNodes(rawData) {
       id: d.cod_contrato,
       radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
       value: d.monto_total ? +d.monto_total : 0,
+      formattedValue: formatNumber(d.monto_total ? +d.monto_total : 0),
       adendas: d.adendas ? d.adendas : [],
       year: moment(d.fecha_contrato).year(),
       provider: d.pro_nombre,
+      provider_code: d.pro_cod,
       name: d.llamado_nombre ? d.llamado_nombre : "",
       modalidad: d.mod_nombre,
       rubro: d.rubro_nombre,

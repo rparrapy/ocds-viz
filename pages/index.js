@@ -1,5 +1,5 @@
 import { Layout } from "antd";
-import Header from "../components/header";
+import MenuHeader from "../components/header";
 import Footer from "../components/footer";
 import Reference from "../components/reference";
 import BubbleView from "../components/bubble_view";
@@ -22,7 +22,7 @@ export default class Index extends React.Component {
 
     return (
       <Layout style={{ height: "100vh" }}>
-        <Header />
+        <MenuHeader selected={"1"} />
         <Layout>
           <Reference
             filterValue={filterValue}
