@@ -9,7 +9,7 @@ import {
   defaultGroup
 } from "./constants";
 
-function formatNumber(num) {
+export function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
 }
 
