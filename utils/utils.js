@@ -41,7 +41,7 @@ export function createNodes(rawData) {
       id: d.cod_contrato,
       radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
       value: d.monto_total ? +d.monto_total : 0,
-      formattedValue: formatNumber(d.monto_total ? +d.monto_total : 0),
+      formattedValue: "Gs. " + formatNumber(d.monto_total ? +d.monto_total : 0),
       adendas: d.adendas ? d.adendas : [],
       year: moment(d.fecha_contrato).year(),
       provider: d.pro_nombre,

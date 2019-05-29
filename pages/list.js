@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import "./list.css";
 import { getPaidAmount, formatNumber } from "../utils/utils";
+import moment from "moment";
 
 const columns = [
   {
@@ -34,12 +35,44 @@ const columns = [
     title: "Monto",
     dataIndex: "formattedValue",
     key: "formattedValue",
-    width: "11%"
+    width: "14%"
   },
   {
     title: "Modalidad",
     dataIndex: "modalidad",
     key: "modalidad"
+  }
+];
+
+const paymentColumns = [
+  {
+    title: "Cod. de Contrato",
+    dataIndex: "codigo_contrato",
+    key: "codigo_contrato",
+    width: "15%"
+  },
+  {
+    title: "Fecha de Contrato",
+    dataIndex: "fecha_contrato",
+    key: "fecha_contrato",
+    width: "30%"
+  },
+  {
+    title: "Fecha de Obligación",
+    dataIndex: "formattedDate",
+    key: "formattedDate",
+    width: "10%"
+  },
+  {
+    title: "Concepto",
+    dataIndex: "concepto",
+    key: "concepto"
+  },
+  {
+    title: "Monto",
+    dataIndex: "formattedValue",
+    key: "formattedValue",
+    width: "15%"
   }
 ];
 
@@ -54,7 +87,48 @@ export default class List extends React.Component {
     });
   }
 
-  getDetail(record) {
+  formatPayments(
+    record,
+    payments,
+    codigo_contrato_key = "id",
+    fecha_contrato_key = "dateSigned"
+  ) {
+    payments.forEach((imp, i) => {
+      imp["codigo_contrato"] = record[codigo_contrato_key];
+      imp["fecha_contrato"] = moment(record[fecha_contrato_key]).format(
+        "DD/MM/YYYY"
+      );
+      imp["formattedValue"] = "Gs. " + formatNumber(imp.monto);
+      imp["formattedDate"] = moment(imp.fecha_obl).format("DD/MM/YYYY");
+      imp["id"] = record[codigo_contrato_key] + i;
+    });
+    return payments;
+  }
+
+  getDetail = record => {
+    let payments = this.formatPayments(record, record.imputaciones);
+    let adendaPayments = record.adendas
+      ? record.adendas
+          .filter(adenda => {
+            return (
+              adenda.tipo === "Amp de monto" ||
+              adenda.tipo === "Amp. de monto" ||
+              adenda.tipo === "Reajuste." ||
+              adenda.tipo === "Renovación"
+            );
+          })
+          .flatMap(a =>
+            this.formatPayments(
+              a,
+              a.imputaciones,
+              "cod_contrato",
+              "fecha_contrato"
+            )
+          )
+      : [];
+
+    payments.push(...adendaPayments);
+
     return (
       <div>
         <table className="table">
@@ -64,13 +138,13 @@ export default class List extends React.Component {
                 {" "}
                 {record.name}
                 <br /> Monto total
-                <br /> <h5>{formatNumber(record.value)}</h5>
+                <br /> <h5>Gs. {formatNumber(record.value)}</h5>
               </td>
-              <td rowspan="2" class="txtC" width="30%">
+              <td className="txtC" width="30%">
                 {" "}
                 Monto ejecutado
                 <br />{" "}
-                <h1 class="per_ejex">
+                <h1 className="per_ejex">
                   {((getPaidAmount(record) / record.value) * 100).toFixed(2)}%
                 </h1>{" "}
               </td>
@@ -122,19 +196,23 @@ export default class List extends React.Component {
                 Tipo de licitación
                 <br /> <strong>Licitación Pública Internacional</strong>{" "}
               </td>
-              <td>
-                {" "}
-                Obra
-                <br /> <strong>GMANS 5</strong>{" "}
-              </td>
             </tr>
           </tbody>
         </table>
+        <Table
+          dataSource={record.imputaciones}
+          columns={paymentColumns}
+          rowKey="id"
+          size="small"
+          pagination={false}
+          bordered={true}
+        />
       </div>
     );
-  }
+  };
 
   render() {
+    console.log(this.state.data);
     return (
       <Layout style={{ height: "100vh" }}>
         <Header selected={"2"} />
