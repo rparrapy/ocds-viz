@@ -90,8 +90,6 @@ export default class List extends React.Component {
           )
       : [];
 
-    payments.push(...adendaPayments);
-
     return (
       <div>
         <table className="table">
@@ -135,9 +133,7 @@ export default class List extends React.Component {
               <td>
                 {" "}
                 Nombre del llamado
-                <br /> <strong>
-                  106/08 Fiscali. Por Niveles Gemans 5
-                </strong>{" "}
+                <br /> <strong>{record.name}</strong>{" "}
               </td>
             </tr>
             <tr>
@@ -163,7 +159,7 @@ export default class List extends React.Component {
           </tbody>
         </table>
         <Table
-          dataSource={record.imputaciones}
+          dataSource={payments.concat(adendaPayments)}
           columns={paymentColumns}
           rowKey="id"
           size="small"
