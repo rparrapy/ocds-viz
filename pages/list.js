@@ -1,48 +1,11 @@
 import { dataset } from "../data/data";
-import { createNodes, getClusterProps } from "../utils/utils";
-import { Table, Layout } from "antd";
+import { Table, Layout, Input, Button, Icon } from "antd";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import "./list.css";
-import { getPaidAmount, formatNumber } from "../utils/utils";
+import { getPaidAmount, formatNumber, createNodes } from "../utils/utils";
 import moment from "moment";
-
-const columns = [
-  {
-    title: "Cod. de Contratación",
-    dataIndex: "id",
-    key: "id",
-    width: "15%"
-  },
-  {
-    title: "Nombre",
-    dataIndex: "name",
-    key: "name",
-    width: "30%"
-  },
-  {
-    title: "RUC",
-    dataIndex: "provider_code",
-    key: "provider_code",
-    width: "10%"
-  },
-  {
-    title: "Proveedor",
-    dataIndex: "provider",
-    key: "provider"
-  },
-  {
-    title: "Monto",
-    dataIndex: "formattedValue",
-    key: "formattedValue",
-    width: "14%"
-  },
-  {
-    title: "Modalidad",
-    dataIndex: "modalidad",
-    key: "modalidad"
-  }
-];
+import Highlighter from "react-highlight-words";
 
 const paymentColumns = [
   {
@@ -211,8 +174,121 @@ export default class List extends React.Component {
     );
   };
 
-  render() {
-    console.log(this.state.data);
+  getColumnSearchProps = (dataIndex, label) => ({
+    filterDropdown: ({
+      setSelectedKeys,
+      selectedKeys,
+      confirm,
+      clearFilters
+    }) => (
+      <div style={{ padding: 8 }} className="ant-table-filter-dropdown">
+        <Input
+          ref={node => {
+            this.searchInput = node;
+          }}
+          placeholder={`Buscar ${label}`}
+          value={selectedKeys[0]}
+          onChange={e =>
+            setSelectedKeys(e.target.value ? [e.target.value] : [])
+          }
+          onPressEnter={() => this.handleSearch(selectedKeys, confirm)}
+          style={{ width: 188, marginBottom: 8, display: "block" }}
+        />
+        <Button
+          type="primary"
+          onClick={() => this.handleSearch(selectedKeys, confirm)}
+          icon="search"
+          size="small"
+          style={{ width: 90, marginRight: 8 }}
+        >
+          Filtrar
+        </Button>
+        <Button
+          onClick={() => this.handleReset(clearFilters)}
+          size="small"
+          style={{ width: 90 }}
+        >
+          Limpiar
+        </Button>
+      </div>
+    ),
+    filterIcon: filtered => (
+      <Icon type="search" style={{ color: filtered ? "#1890ff" : undefined }} />
+    ),
+    onFilter: (value, record) =>
+      record[dataIndex]
+        .toString()
+        .toLowerCase()
+        .includes(value.toLowerCase()),
+    onFilterDropdownVisibleChange: visible => {
+      if (visible) {
+        setTimeout(() => this.searchInput.select());
+      }
+    },
+    render: text => (
+      <Highlighter
+        highlightStyle={{ backgroundColor: "#ffc069", padding: 0 }}
+        searchWords={[this.state.searchText]}
+        autoEscape
+        textToHighlight={text.toString()}
+      />
+    )
+  });
+
+  handleSearch = (selectedKeys, confirm) => {
+    confirm();
+    this.setState({ searchText: selectedKeys[0] });
+  };
+
+  handleReset = clearFilters => {
+    clearFilters();
+    this.setState({ searchText: "" });
+  };
+
+  render = () => {
+    const columns = [
+      {
+        title: "Cod. de Contratación",
+        dataIndex: "id",
+        key: "id",
+        width: "15%",
+        ...this.getColumnSearchProps("id", "Cod. de Contratación")
+      },
+      {
+        title: "Nombre",
+        dataIndex: "name",
+        key: "name",
+        width: "30%",
+        ...this.getColumnSearchProps("name", "Nombre")
+      },
+      {
+        title: "RUC",
+        dataIndex: "provider_code",
+        key: "provider_code",
+        width: "10%",
+        ...this.getColumnSearchProps("provider_code", "RUC")
+      },
+      {
+        title: "Proveedor",
+        dataIndex: "provider",
+        key: "provider",
+        ...this.getColumnSearchProps("provider", "Proveedor")
+      },
+      {
+        title: "Monto",
+        dataIndex: "formattedValue",
+        key: "formattedValue",
+        width: "14%",
+        ...this.getColumnSearchProps("formattedValue", "Monto")
+      },
+      {
+        title: "Modalidad",
+        dataIndex: "modalidad",
+        key: "modalidad",
+        ...this.getColumnSearchProps("modalidad", "Modalidad")
+      }
+    ];
+
     return (
       <Layout style={{ height: "100vh" }}>
         <Header selected={"2"} />
@@ -230,5 +306,5 @@ export default class List extends React.Component {
         <Footer />
       </Layout>
     );
-  }
+  };
 }
