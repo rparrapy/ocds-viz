@@ -45,8 +45,10 @@ export default class List extends React.Component {
   };
 
   componentDidMount() {
+    const urlParams = new URLSearchParams(window.location.search);
     this.setState({
-      data: createNodes(dataset.contratos)
+      data: createNodes(dataset.contratos),
+      filteredInfo: { id: urlParams.get("id") }
     });
   }
 
@@ -92,6 +94,10 @@ export default class List extends React.Component {
 
     return (
       <div>
+        <div style={{ textAlign: "center" }}>
+          <div id="prueba" style={{ minWidth: "200px" }} />
+        </div>
+
         <table className="table">
           <tbody>
             <tr>
@@ -158,6 +164,7 @@ export default class List extends React.Component {
             </tr>
           </tbody>
         </table>
+        <br />
         <Table
           dataSource={payments.concat(adendaPayments)}
           columns={paymentColumns}
@@ -212,10 +219,12 @@ export default class List extends React.Component {
       <Icon type="search" style={{ color: filtered ? "#1890ff" : undefined }} />
     ),
     onFilter: (value, record) =>
-      record[dataIndex]
-        .toString()
-        .toLowerCase()
-        .includes(value.toLowerCase()),
+      value
+        ? record[dataIndex]
+            .toString()
+            .toLowerCase()
+            .includes(value.toLowerCase())
+        : true,
     onFilterDropdownVisibleChange: visible => {
       if (visible) {
         setTimeout(() => this.searchInput.select());
@@ -233,7 +242,11 @@ export default class List extends React.Component {
 
   handleSearch = (selectedKeys, confirm) => {
     confirm();
-    this.setState({ searchText: selectedKeys[0] });
+    if (this.state.filteredInfo) {
+      this.setState({ filteredInfo: { id: selectedKeys[0] } });
+    } else {
+      this.setState({ searchText: selectedKeys[0] });
+    }
   };
 
   handleReset = clearFilters => {
@@ -242,12 +255,16 @@ export default class List extends React.Component {
   };
 
   render = () => {
+    let { filteredInfo } = this.state;
+    filteredInfo = filteredInfo || {};
+
     const columns = [
       {
         title: "Cod. de Contratación",
         dataIndex: "id",
         key: "id",
         width: "15%",
+        filteredValue: [filteredInfo.id] || null,
         ...this.getColumnSearchProps("id", "Cod. de Contratación")
       },
       {

@@ -39,6 +39,7 @@ export function createNodes(rawData) {
     .filter(d => d["fecha_contrato"] || d["fecha_primer_pago"])
     .map(d => ({
       id: d.cod_contrato,
+      is_adenda: false,
       radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
       value: d.monto_total ? +d.monto_total : 0,
       formattedValue: "Gs. " + formatNumber(d.monto_total ? +d.monto_total : 0),

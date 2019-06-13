@@ -191,8 +191,12 @@ export default class Bubbles extends React.Component {
       .attr("fill", d => getFill(d, until, this.state.g))
       .attr("stroke", d => getStroke(d))
       .on("mouseover", showDetail) // eslint-disable-line
-      .on("mouseout", hideDetail); // eslint-disable-line
-
+      .on("mouseout", hideDetail) // eslint-disable-line
+      .on("click", function(d) {
+        if (!d.is_adenda) {
+          window.location.href = "/list?id=" + d.id;
+        }
+      });
     bubblesE
       .transition()
       .duration(2000)
