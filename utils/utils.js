@@ -247,3 +247,150 @@ export function getTotalAmountAddendaPerContract(contract, until) {
     0
   );
 }
+
+export function getFill(contrato, hasta, svg) {
+  var limite = hasta || moment();
+  //Cambiamos un poco para tener en cuenta las adendas de tiempo
+  var is_adenda_tiempo =
+    contrato.is_adenda && contrato.tipo === "Amp de plazos";
+  var cobrado = is_adenda_tiempo ? 0 : getPaidAmount(contrato, limite);
+  var ejecutado = is_adenda_tiempo ? 1 : cobrado / contrato.value;
+  ejecutado = isFinite(ejecutado) ? ejecutado : 0;
+
+  var fillColor = contrato.is_adenda ? "#00698C" : "#f56727";
+  var bgColor = contrato.is_adenda ? "#bfdfff" : "#ffead4";
+  var gradientId = "grad-" + contrato.id;
+
+  //Agrego aca, pero deberiamos hacer en otra parte
+  contrato.ejecutado = ejecutado.toFixed(2);
+  contrato.monto_pagado = cobrado;
+
+  var imgId = "img-" + contrato.cod_contrato;
+  //var imagen = $("#" + imgId);
+  //var componente = $("#componentes .active").attr("id");
+  // if (!componente || contrato.componente === componente) {
+  //   //console.log('mostrar imagen');
+  //   imagen.show();
+  // }
+
+  if (hasta) {
+    d3.select("#" + gradientId + " stop.color")
+      .attr("offset", ejecutado.toFixed(2))
+      .style("stop-color", fillColor);
+    d3.select("#" + gradientId + " stop.blank")
+      .attr("offset", ejecutado.toFixed(2))
+      .style("stop-color", bgColor);
+
+    if (contrato["adendas"]) {
+      // if (
+      //   _.every(contrato.adendas, function(adenda) {
+      //     return moment(adenda.fecha_contrato) > limite;
+      //   })
+      // ) {
+      //   imagen.hide();
+      // }
+    }
+    if (!contrato.is_adenda) {
+      // var displayContrato = d3
+      //   .select("#circulo-" + contrato.id)
+      //   .style("display");
+      // if (displayContrato == "none") {
+      //   imagen.hide();
+      // }
+    }
+  } else {
+    if (d3.select("#" + gradientId).empty()) {
+      var grad = svg
+        .append("defs")
+        .append("linearGradient")
+        .attr("id", gradientId)
+        .attr("x1", "0%")
+        .attr("x2", "0%")
+        .attr("y1", "100%")
+        .attr("y2", "0%");
+      grad
+        .append("stop")
+        .attr("class", "color")
+        .attr("offset", ejecutado.toFixed(2))
+        .style("stop-color", fillColor);
+      grad
+        .append("stop")
+        .attr("class", "blank")
+        .attr("offset", ejecutado.toFixed(2))
+        .style("stop-color", bgColor);
+    }
+  }
+
+  return "url(#" + gradientId + ")";
+}
+
+export function getStroke(contrato, hasta) {
+  return contrato.is_adenda ? "#006289" : "#ca4600";
+}
+
+export function renderImage(svg, contrato, showTooltip = true) {
+  var imgId = "img-" + contrato.id;
+  var imagen = d3.select("#" + imgId);
+  if (contrato["adendas"] && contrato["adendas"].length > 0) {
+    var src_img = null;
+
+    if (
+      contrato["adendas"].filter(adenda => {
+        return adenda.tipo === "Amp de plazos";
+      }).length > 0
+    ) {
+      src_img = "ico_tiempo.svg";
+    }
+
+    if (
+      contrato["adendas"].filter(adenda => {
+        return (
+          adenda.tipo === "Amp de monto" ||
+          adenda.tipo === "Amp. de monto" ||
+          adenda.tipo === "Reajuste." ||
+          adenda.tipo === "Renovación"
+        );
+      }).length > 0
+    ) {
+      if (src_img === null) {
+        src_img = "ico_dinero.svg";
+      } else {
+        src_img = "ico_ambos.png";
+      }
+    }
+
+    var imgScale = src_img === "ico_ambos.png" ? 2 : 4;
+
+    if (src_img) {
+      if (imagen.empty()) {
+        imagen = svg
+          .data([contrato])
+          .append("image")
+          .attr("id", imgId)
+          .attr("xlink:href", "static/images/" + src_img)
+          .attr("width", (contrato.radius / imgScale) * 2)
+          .attr("height", (contrato.radius / imgScale) * 2)
+          .on("mouseover", _ => {
+            if (showTooltip) {
+              showDetail(contrato);
+            }
+          });
+      }
+      imagen
+        .attr(
+          "x",
+          showTooltip
+            ? contrato.x - contrato.radius / imgScale
+            : parseInt(svg.style("width").slice(0, -2)) / 2 -
+                contrato.radius / imgScale
+        )
+        .attr(
+          "y",
+          showTooltip
+            ? contrato.y - contrato.radius / imgScale
+            : parseInt(svg.style("height").slice(0, -2)) / 2 -
+                contrato.radius / imgScale
+        );
+    }
+  }
+}
