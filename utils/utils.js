@@ -328,7 +328,7 @@ export function getStroke(contrato, hasta) {
   return contrato.is_adenda ? "#006289" : "#ca4600";
 }
 
-export function renderImage(svg, contrato, showTooltip = true) {
+export function renderImage(svg, contrato, showDetail = null) {
   var imgId = "img-" + contrato.id;
   var imagen = d3.select("#" + imgId);
   if (contrato["adendas"] && contrato["adendas"].length > 0) {
@@ -371,7 +371,7 @@ export function renderImage(svg, contrato, showTooltip = true) {
           .attr("width", (contrato.radius / imgScale) * 2)
           .attr("height", (contrato.radius / imgScale) * 2)
           .on("mouseover", _ => {
-            if (showTooltip) {
+            if (showDetail) {
               showDetail(contrato);
             }
           });
@@ -379,14 +379,14 @@ export function renderImage(svg, contrato, showTooltip = true) {
       imagen
         .attr(
           "x",
-          showTooltip
+          showDetail
             ? contrato.x - contrato.radius / imgScale
             : parseInt(svg.style("width").slice(0, -2)) / 2 -
                 contrato.radius / imgScale
         )
         .attr(
           "y",
-          showTooltip
+          showDetail
             ? contrato.y - contrato.radius / imgScale
             : parseInt(svg.style("height").slice(0, -2)) / 2 -
                 contrato.radius / imgScale

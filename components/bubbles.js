@@ -109,7 +109,7 @@ export default class Bubbles extends React.Component {
           : d.x
       )
       .attr("cy", d => {
-        renderImage(this.state.g, d);
+        renderImage(this.state.g, d, showDetail);
         return d.is_adenda
           ? d.padre.y -
               Math.sin((angulos[d.pos] * 180) / Math.PI) * d.padre.radius

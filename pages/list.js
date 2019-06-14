@@ -103,7 +103,11 @@ export default class List extends React.Component {
               float: "left"
             }}
           >
-            <SingleBubble data={record} />
+            <SingleBubble
+              data={this.state.data.filter(
+                d => d.id === record.id || (d.padre && d.padre.id === record.id)
+              )}
+            />
           </div>
 
           <div style={{ width: "50%", float: "left", flex: 1 }}>

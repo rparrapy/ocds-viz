@@ -4,6 +4,7 @@ import { getStroke, getFill, renderImage } from "../utils/utils";
 export default class SingleBubble extends React.Component {
   componentDidMount() {
     const { data } = this.props;
+    let angulos = [0, 72, 150, 216, 288, 360];
 
     var width = 300;
 
@@ -15,11 +16,21 @@ export default class SingleBubble extends React.Component {
 
     var circles = svgContainer
       .selectAll("circle")
-      .data([data])
+      .data(data)
       .enter()
       .append("circle")
-      .attr("cx", "50%")
-      .attr("cy", "50%")
+      .attr("cx", d =>
+        d.is_adenda
+          ? width / 2 +
+            Math.cos((angulos[d.pos] * 180) / Math.PI) * d.padre.radius
+          : "50%"
+      )
+      .attr("cy", d =>
+        d.is_adenda
+          ? parseInt(svgContainer.style("height").slice(0, -2)) / 2 -
+            Math.sin((angulos[d.pos] * 180) / Math.PI) * d.padre.radius
+          : "50%"
+      )
       .attr("r", function(d) {
         return d.radius;
       })
