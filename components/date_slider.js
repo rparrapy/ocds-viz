@@ -21,8 +21,8 @@ export default class DateSlider extends React.Component {
   render() {
     const { data, width } = this.props;
     const { until } = this.state;
-    const max = moment.max(data.map(d => d.dateSigned));
-    const min = moment.min(data.map(d => d.dateSigned));
+    let max = moment();
+    let min = moment.min(data.map(d => d.dateSigned)).clone();
     let marks = {};
     marks[min.unix()] = min.format("DD/MM/YYYY");
     marks[max.unix()] = max.format("DD/MM/YYYY");

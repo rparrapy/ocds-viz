@@ -29,35 +29,50 @@ export function createNodes(rawData) {
   // Use the max total_amount in the data as the max in the scale's domain
   // note we have to ensure the total_amount is a number.
 
-  rawData = rawData.filter(c => c.cod_contrato);
-  const radiusScale = getRadiusScale(rawData);
+  const data = rawData.records.flatMap(d => {
+    const awards = d.compiledRelease.awards.reduce((acc, curr) => {
+      acc[curr.id] = curr;
+      return acc;
+    }, {});
+
+    d.compiledRelease.contracts.forEach(c => {
+      c.tenderName = d.compiledRelease.tender.id;
+      c.supplierName = awards[c.awardID].suppliers[0].name;
+      c.supplierCode = awards[c.awardID].suppliers[0].identifier.id;
+      c.buyerName = d.compiledRelease.tender.procuringEntity.name;
+    });
+    return d.compiledRelease.contracts;
+  });
+  const radiusScale = getRadiusScale(data);
 
   // Use map() to convert raw data into node data.
   // Checkout http://learnjsdata.com/ for more on
   // working with data.
-  const myNodes = rawData
-    .filter(d => d["fecha_contrato"] || d["fecha_primer_pago"])
-    .map(d => ({
-      id: d.cod_contrato,
-      is_adenda: false,
-      radius: d.monto_total ? radiusScale(+d.monto_total) : 0,
-      value: d.monto_total ? +d.monto_total : 0,
-      formattedValue: "Gs. " + formatNumber(d.monto_total ? +d.monto_total : 0),
-      adendas: d.adendas ? d.adendas : [],
-      year: moment(d.fecha_contrato).year(),
-      provider: d.pro_nombre,
-      provider_code: d.pro_cod,
-      name: d.llamado_nombre ? d.llamado_nombre : "",
-      modalidad: d.mod_nombre,
-      rubro: d.rubro_nombre,
-      dateSigned: d["fecha_contrato"]
-        ? moment(d["fecha_contrato"])
-        : moment(d["fecha_primer_pago"]),
-      imputaciones: d.imputaciones,
-      adendas: d.adendas ? d.adendas : [],
-      x: Math.random() * 900,
-      y: Math.random() * 800
-    }));
+  const myNodes = data.map(d => ({
+    id: d.id,
+    is_adenda: false,
+    radius: d.value.amount ? radiusScale(+d.value.amount) : 0,
+    value: d.value.amount ? +d.value.amount : 0,
+    currency: d.value.currency,
+    formattedValue:
+      d.value.currency +
+      " " +
+      formatNumber(d.value.amount ? +d.value.amount : 0),
+    adendas: d.amendments ? d.amendments : [],
+    year: moment(d.dateSigned).year(),
+    provider: d.supplierName,
+    provider_code: d.supplierCode,
+    name: d.tenderName ? d.tenderName : "",
+    convocante: d.buyerName,
+    dateSigned: moment(d.dateSigned),
+    imputaciones:
+      d.implementation && d.implementation.transactions
+        ? d.implementation.transactions
+        : [],
+    adendas: d.amendments ? d.amendments : [],
+    x: Math.random() * 900,
+    y: Math.random() * 800
+  }));
 
   // sort them descending to prevent occlusion of smaller nodes.
   myNodes.sort((a, b) => b.value - a.value);
@@ -68,26 +83,24 @@ export function createNodes(rawData) {
       return c.adendas
         .filter(
           _ =>
-            _.tipo === "Amp de monto" ||
-            _.tipo === "Amp. de monto" ||
-            _.tipo === "Reajuste." ||
-            _.tipo === "Renovación"
+            _.rationale === "Amp de monto" ||
+            _.rationale === "Amp. de monto" ||
+            _.rationale === "Reajuste." ||
+            _.rationale === "Renovación"
         )
         .map((a, i) => {
           let adenda = Object.assign({}, c);
           adenda.is_adenda = true;
-          adenda.radius = radiusScale(a.monto);
-          adenda.dateSigned = a["fecha_contrato"]
-            ? moment(a["fecha_contrato"])
-            : moment(a["fecha_primer_pago"]);
+          adenda.radius = 0;
+          adenda.dateSigned = a.date;
           adenda.x = c.x + c.radius - adenda.radius;
           adenda.y = c.y + c.radius - adenda.radius;
           adenda.pos = i;
           adenda.adendas = [];
-          adenda.id = a.cod_contrato;
-          adenda.value = a.monto;
+          adenda.id = c.id;
+          adenda.value = 0;
           adenda.padre = c;
-          adenda.imputaciones = a.imputaciones;
+          adenda.imputaciones = [];
           return adenda;
         });
     });
@@ -95,8 +108,8 @@ export function createNodes(rawData) {
   return myNodes.concat(adendas);
 }
 
-export function getRadiusScale(data, key = "monto_total") {
-  const maxAmount = d3.max(data, d => +d[key]);
+export function getRadiusScale(data) {
+  const maxAmount = d3.max(data, d => +d["value"]["amount"]);
 
   // Sizes bubbles based on area.
   // @v4: new flattened scale names.
@@ -193,7 +206,7 @@ export function getPaidAmount(contract, until) {
   until = until || moment();
 
   return contract.imputaciones.reduce((sum, payment) => {
-    return moment(payment.fecha_obl) <= until ? sum + payment.monto : sum;
+    return moment(payment.date) <= until ? sum + payment.value : sum;
   }, 0);
 }
 
@@ -202,15 +215,15 @@ export function getPaidAmountAddenda(contract, until) {
   let payments = contract.adendas
     .filter(
       ad =>
-        ad.tipo === "Amp de monto" ||
-        ad.tipo === "Reajuste." ||
-        ad.tipo === "Renovación"
+        ad.rationale === "Amp de monto" ||
+        ad.rationale === "Reajuste." ||
+        ad.rationale === "Renovación"
     )
     .map(ad => ad.imputaciones)
     .flat();
 
   return payments.reduce((sum, payment) => {
-    return moment(payment.fecha_obl) <= until ? sum + payment.monto : sum;
+    return moment(payment.date) <= until ? sum + payment.value : sum;
   }, 0);
 }
 
@@ -237,12 +250,11 @@ export function getTotalAmountAddendaPerContract(contract, until) {
   until = until || moment();
   return contract.adendas.reduce(
     (acc, ad) =>
-      (ad.tipo === "Amp de monto" ||
-        ad.tipo === "Reajuste." ||
-        ad.tipo === "Renovación") &&
-      ad["fecha_contrato"] &&
-      moment(ad["fecha_contrato"]) <= until
-        ? ad["monto"] + acc
+      (ad.rationale === "Amp de monto" ||
+        ad.rationale === "Reajuste." ||
+        ad.rationale === "Renovación") &&
+      moment(ad.parent.dateSigned) <= until
+        ? ad.value + acc
         : acc,
     0
   );
@@ -252,7 +264,7 @@ export function getFill(contrato, hasta, svg) {
   var limite = hasta || moment();
   //Cambiamos un poco para tener en cuenta las adendas de tiempo
   var is_adenda_tiempo =
-    contrato.is_adenda && contrato.tipo === "Amp de plazos";
+    contrato.is_adenda && contrato.rationale === "Amp de plazos";
   var cobrado = is_adenda_tiempo ? 0 : getPaidAmount(contrato, limite);
   var ejecutado = is_adenda_tiempo ? 1 : cobrado / contrato.value;
   ejecutado = isFinite(ejecutado) ? ejecutado : 0;
@@ -336,22 +348,13 @@ export function renderImage(svg, contrato, showDetail = null) {
 
     if (
       contrato["adendas"].filter(adenda => {
-        return adenda.tipo === "Amp de plazos";
+        return adenda.rationale === "Amp de plazos";
       }).length > 0
     ) {
       src_img = "ico_tiempo.svg";
     }
 
-    if (
-      contrato["adendas"].filter(adenda => {
-        return (
-          adenda.tipo === "Amp de monto" ||
-          adenda.tipo === "Amp. de monto" ||
-          adenda.tipo === "Reajuste." ||
-          adenda.tipo === "Renovación"
-        );
-      }).length > 0
-    ) {
+    if (contrato["adendas"].length > 0) {
       if (src_img === null) {
         src_img = "ico_dinero.svg";
       } else {

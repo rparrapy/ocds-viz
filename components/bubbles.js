@@ -166,7 +166,7 @@ export default class Bubbles extends React.Component {
 
   renderBubbles(data, until) {
     if (!this.state.g) return;
-    const radiusScale = getRadiusScale(data, "value");
+    const radiusScale = getRadiusScale(data);
 
     const bubbles = this.state.g.selectAll(".bubble").data(data, d => d.id);
 
@@ -218,6 +218,7 @@ export default class Bubbles extends React.Component {
 
   renderLabels(data, clusterCenters, grouping) {
     if (!this.state.g) return;
+    const currency = data[0].currency;
     this.state.g.selectAll(".label").remove();
     this.state.g.selectAll(".monto-label").remove();
     if (grouping === "all") {
@@ -226,7 +227,9 @@ export default class Bubbles extends React.Component {
       var paidPercentage = ((totalPaid / totalAmount) * 100).toFixed(0);
       paidPercentage = isNaN(paidPercentage) ? 0 : paidPercentage;
       var labelAll =
-        "Total Ejecutado: Gs. " +
+        "Total Ejecutado: " +
+        currency +
+        " " +
         totalPaid.toLocaleString() +
         " (" +
         paidPercentage.toLocaleString() +
@@ -244,7 +247,10 @@ export default class Bubbles extends React.Component {
         let label;
         if (grouping === "all") {
           label =
-            "Monto Total de Contratos: Gs. " + totalAmount.toLocaleString();
+            "Monto Total de Contratos: " +
+            currency +
+            " " +
+            totalAmount.toLocaleString();
         } else {
           label = d.name.toProperCase();
 

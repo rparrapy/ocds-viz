@@ -24,8 +24,7 @@ export default ({ filterValue, onFilterChanged }) => (
     <hr />
 
     <p style={{ textAlign: "left", fontSize: 12 }}>
-      Los tamaños de los circulos representan los montos en guaraníes de los
-      contratos.
+      Los tamaños de los circulos representan los montos de los contratos.
     </p>
 
     <svg width={270} height={120}>
@@ -70,12 +69,7 @@ export default ({ filterValue, onFilterChanged }) => (
 
     <ul>
       <li>
-        <img src="/static/images/ico_dinero.svg" alt="" /> Contrato con Adenda
-        de monto{" "}
-      </li>
-      <li>
-        <img src="/static/images/ico_tiempo.svg" alt="" /> Contrato con Adenda
-        de tiempo{" "}
+        <img src="/static/images/ico_dinero.svg" alt="" /> Contrato con Adenda{" "}
       </li>
     </ul>
     <hr />
@@ -89,13 +83,6 @@ export default ({ filterValue, onFilterChanged }) => (
       <li>
         <img src="/static/images/ico_color2.png" alt="" /> Monto pagado del
         proyecto
-      </li>{" "}
-      <li>
-        <img src="/static/images/ico_color3.png" alt="" /> Adenda de monto
-      </li>{" "}
-      <li>
-        <img src="/static/images/ico_color4.png" alt="" /> Pago de adenda de
-        monto
       </li>{" "}
     </ul>
 

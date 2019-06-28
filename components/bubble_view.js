@@ -22,7 +22,7 @@ export default class BubbleView extends React.Component {
 
   componentDidMount() {
     this.setState({
-      data: createNodes(dataset.contratos)
+      data: createNodes(dataset)
     });
   }
 

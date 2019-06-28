@@ -13,13 +13,13 @@ const paymentColumns = [
     title: "Cod. de Contrato",
     dataIndex: "codigo_contrato",
     key: "codigo_contrato",
-    width: "15%"
+    width: "30%"
   },
   {
     title: "Fecha de Contrato",
     dataIndex: "fecha_contrato",
     key: "fecha_contrato",
-    width: "30%"
+    width: "10%"
   },
   {
     title: "Fecha de Obligación",
@@ -28,15 +28,10 @@ const paymentColumns = [
     width: "10%"
   },
   {
-    title: "Concepto",
-    dataIndex: "concepto",
-    key: "concepto"
-  },
-  {
     title: "Monto",
     dataIndex: "formattedValue",
     key: "formattedValue",
-    width: "15%"
+    width: "20%"
   }
 ];
 
@@ -48,7 +43,7 @@ export default class List extends React.Component {
   componentDidMount() {
     const urlParams = new URLSearchParams(window.location.search);
     this.setState({
-      data: createNodes(dataset.contratos),
+      data: createNodes(dataset),
       filteredInfo: { id: urlParams.get("id") }
     });
   }
@@ -59,12 +54,13 @@ export default class List extends React.Component {
     codigo_contrato_key = "id",
     fecha_contrato_key = "dateSigned"
   ) {
+    console.log(payments);
     payments.forEach((imp, i) => {
       imp["codigo_contrato"] = record[codigo_contrato_key];
       imp["fecha_contrato"] = moment(record[fecha_contrato_key]).format(
         "DD/MM/YYYY"
       );
-      imp["formattedValue"] = "Gs. " + formatNumber(imp.monto);
+      imp["formattedValue"] = "Gs. " + formatNumber(imp.value);
       imp["formattedDate"] = moment(imp.fecha_obl).format("DD/MM/YYYY");
       imp["id"] = record[codigo_contrato_key] + i;
     });
@@ -258,7 +254,7 @@ export default class List extends React.Component {
         highlightStyle={{ backgroundColor: "#ffc069", padding: 0 }}
         searchWords={[this.state.searchText]}
         autoEscape
-        textToHighlight={text.toString()}
+        textToHighlight={text ? text.toString() : ""}
       />
     )
   });
@@ -316,12 +312,6 @@ export default class List extends React.Component {
         key: "formattedValue",
         width: "14%",
         ...this.getColumnSearchProps("formattedValue", "Monto")
-      },
-      {
-        title: "Modalidad",
-        dataIndex: "modalidad",
-        key: "modalidad",
-        ...this.getColumnSearchProps("modalidad", "Modalidad")
       }
     ];
 

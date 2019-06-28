@@ -31,8 +31,7 @@ export default class GroupingPicker extends React.Component {
         <Radio.Group value={active} onChange={this.onBtnClick}>
           <Radio.Button value="all">Todos</Radio.Button>
           <Radio.Button value="provider">Proveedor</Radio.Button>
-          <Radio.Button value="rubro">Rubro</Radio.Button>
-          <Radio.Button value="modalidad">Modalidad</Radio.Button>
+          <Radio.Button value="convocante">Convocante</Radio.Button>
         </Radio.Group>
       </div>
     );
@@ -41,5 +40,5 @@ export default class GroupingPicker extends React.Component {
 
 GroupingPicker.propTypes = {
   onChanged: PropTypes.func.isRequired,
-  active: PropTypes.oneOf(["all", "provider", "rubro", "modalidad"]).isRequired
+  active: PropTypes.oneOf(["all", "provider", "convocante"]).isRequired
 };
