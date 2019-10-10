@@ -796,3 +796,9 @@ Know limitations of the tool include:
 
 - Single currency support: all tenders and transactions should use the same currency.
 - Single supplier per contract: each contract should have a single supplier.
+
+## Attribution
+
+This project was based on previous work done for Ñamopora Ñanderape, a project of the
+Ministry of Public Works of Paraguay funded by the World Bank. The original visualization is available
+at [Mapa IGAP](https://www.mopc.gov.py/mopcweb/index.php/unidades-y-comisiones/banco-mundial/namopora-nanderape/mapa-igap).
